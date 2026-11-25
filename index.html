@@ -1,0 +1,1655 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M-2-8 金澤職人夢｜日本石川縣傳統工藝17日海外見習規劃 (2027/06/20–07/06)</title>
+  <meta name="description" content="青年百億海外圓夢基金計畫－海外翱翔組 M-2-8 金澤職人夢：2027年6月20日至7月6日，前往日本石川縣深入九谷燒、山中漆器、金澤金箔與加賀象嵌職人現場。" />
+
+  <!-- Google Fonts: Noto Serif TC, Noto Sans TC, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;600;700&family=Noto+Serif+TC:wght@500;600;700;900&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Tailwind Custom Design Tokens (Kaga Gosai & Gold Leaf Palette) -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            washi: '#FAF8F5',
+            washiDark: '#F1ECE1',
+            indigoKaga: '#1E3246',
+            crimsonKaga: '#9B2C2C',
+            goldLeaf: '#C5A059',
+            goldLight: '#E5D1A4',
+            forestKaga: '#2D5A4C',
+            ochreKaga: '#B87D3B',
+            ink: '#222222',
+            inkMuted: '#57534E',
+          },
+          fontFamily: {
+            serif: ['"Noto Serif TC"', 'serif'],
+            sans: ['"Noto Sans TC"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          boxShadow: {
+            craft: '0 10px 30px -10px rgba(30, 50, 70, 0.12)',
+            gold: '0 8px 25px -6px rgba(197, 160, 89, 0.35)',
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    /* Subtle Japanese Washi Paper Texture & Decorative Gold Accents */
+    body {
+      background-color: #FAF8F5;
+      color: #222222;
+      background-image:
+        radial-gradient(rgba(197, 160, 89, 0.08) 1px, transparent 0),
+        radial-gradient(rgba(30, 50, 70, 0.04) 1px, transparent 0);
+      background-size: 32px 32px;
+      background-position: 0 0, 16px 16px;
+    }
+
+    /* Traditional Japanese Asanoha / Seigaiha subtle header accent */
+    .kaga-border-gradient {
+      background: linear-gradient(90deg, #1E3246 0%, #9B2C2C 35%, #C5A059 70%, #2D5A4C 100%);
+    }
+
+    .gold-foil-shimmer {
+      background: linear-gradient(135deg, #C5A059 0%, #E5D1A4 45%, #B88B3A 100%);
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F1ECE1;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #C5A059;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #1E3246;
+    }
+
+    /* Smooth accordion animation */
+    .accordion-content {
+      transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease;
+    }
+  </style>
+</head>
+<body class="font-sans antialiased selection:bg-goldLeaf/30 selection:text-indigoKaga overflow-x-hidden">
+
+  <!-- Top Kaga Gosai 5-Color Ribbon -->
+  <div class="h-1.5 w-full kaga-border-gradient fixed top-0 left-0 z-50"></div>
+
+  <!-- Sticky Navigation Bar -->
+  <header class="sticky top-1.5 z-40 bg-washi/95 backdrop-blur-md border-b border-stone-200/80 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <!-- Brand Logo -->
+        <a href="#top" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 rounded-xl bg-indigoKaga flex items-center justify-center border border-goldLeaf/60 shadow-sm group-hover:scale-105 transition-transform">
+            <span class="font-serif text-goldLeaf font-bold text-lg tracking-tighter">金澤</span>
+          </div>
+          <div>
+            <div class="flex items-center gap-1.5">
+              <span class="font-mono text-xs font-semibold px-1.5 py-0.5 rounded bg-crimsonKaga/10 text-crimsonKaga">M-2-8</span>
+              <span class="font-serif font-bold text-base sm:text-lg text-indigoKaga tracking-wide">金澤職人夢</span>
+            </div>
+            <p class="text-[11px] text-inkMuted hidden sm:block">青年百億海外圓夢基金計畫・海外翱翔組</p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-inkMuted">
+          <a href="#pillars" class="hover:text-indigoKaga transition-colors">四大工藝軸線</a>
+          <a href="#itinerary" class="hover:text-indigoKaga transition-colors">17日完整行程</a>
+          <a href="#institutions" class="hover:text-indigoKaga transition-colors">見習職人機構</a>
+          <a href="#eligibility" class="hover:text-indigoKaga transition-colors">申請資格與培訓</a>
+          <a href="#budget" class="hover:text-indigoKaga transition-colors">經費與規範</a>
+        </nav>
+
+        <!-- Action Buttons -->
+        <div class="flex items-center gap-2 sm:gap-3">
+          <button onclick="openNotesModal()" class="relative inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-washiDark hover:bg-goldLeaf/20 text-indigoKaga text-xs sm:text-sm font-medium border border-stone-300/80 transition-all cursor-pointer">
+            <i data-lucide="bookmark" class="w-4 h-4 text-crimsonKaga"></i>
+            <span class="hidden sm:inline">我的見習筆記</span>
+            <span id="savedCountBadge" class="font-mono text-xs bg-indigoKaga text-white px-1.5 py-0.2 rounded-full">0</span>
+          </button>
+
+          <button onclick="openGithubModal()" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-indigoKaga hover:bg-indigoKaga/90 text-washi text-xs sm:text-sm font-medium shadow-sm transition-all cursor-pointer">
+            <i data-lucide="github" class="w-4 h-4 text-goldLeaf"></i>
+            <span class="hidden md:inline">GitHub 部署指南</span>
+          </button>
+
+          <!-- Mobile Menu Button -->
+          <button id="mobileMenuBtn" onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded-xl text-indigoKaga hover:bg-stone-200/60" aria-label="開啟選單">
+            <i data-lucide="menu" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Dropdown -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-washi border-b border-stone-200 px-4 pt-2 pb-4 space-y-2">
+      <a href="#pillars" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg text-sm font-medium text-indigoKaga hover:bg-washiDark">四大工藝與產業軸線</a>
+      <a href="#itinerary" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg text-sm font-medium text-indigoKaga hover:bg-washiDark">17日完整見習行程 (6/20–7/6)</a>
+      <a href="#institutions" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg text-sm font-medium text-indigoKaga hover:bg-washiDark">7大核心見習職人機構</a>
+      <a href="#eligibility" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg text-sm font-medium text-indigoKaga hover:bg-washiDark">青年申請資格與行前培訓</a>
+      <a href="#budget" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg text-sm font-medium text-indigoKaga hover:bg-washiDark">獎助經費規劃與注意事項</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="top" class="relative pt-10 pb-16 sm:pt-16 sm:pb-24 overflow-hidden">
+    <!-- Decorative Background Kanji Watermark -->
+    <div class="pointer-events-none select-none absolute -right-10 top-6 font-serif font-black text-[160px] sm:text-[260px] text-indigoKaga/[0.03] leading-none">
+      加賀
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="max-w-4xl">
+        <!-- Program Category Tag -->
+        <div class="inline-flex flex-wrap items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigoKaga/5 border border-indigoKaga/15 mb-6">
+          <span class="w-2 h-2 rounded-full bg-crimsonKaga animate-pulse"></span>
+          <span class="text-xs sm:text-sm font-medium text-indigoKaga">青年百億海外圓夢基金計畫・海外翱翔組</span>
+          <span class="text-stone-300">|</span>
+          <span class="text-xs font-medium text-forestKaga">主題類別：(二) 創業育成與產業交流</span>
+        </div>
+
+        <!-- Main Title -->
+        <h1 class="font-serif font-black text-3xl sm:text-5xl lg:text-6xl text-indigoKaga leading-tight tracking-tight mb-5">
+          金澤職人夢
+          <span class="block text-xl sm:text-3xl lg:text-4xl font-bold text-crimsonKaga mt-2">
+            日本石川縣傳統工藝與地方創生 17 日深度見習
+          </span>
+        </h1>
+
+        <p class="text-base sm:text-lg text-inkMuted leading-relaxed max-w-3xl mb-8">
+          深入日本工藝重鎮「石川縣」（加賀、能美、小松、金澤），從<strong class="text-indigoKaga font-semibold">九谷燒</strong>五彩赤繪、<strong class="text-indigoKaga font-semibold">山中漆器</strong>轆轤蒔繪、<strong class="text-indigoKaga font-semibold">金澤金箔</strong>萬分之一毫米極致工藝，到<strong class="text-indigoKaga font-semibold">加賀象嵌</strong>與公設育成孵化器，展開一場橫跨技術語言化、窯元品牌經營與臺日青年職人對話的圓夢之旅。
+        </p>
+
+        <!-- Primary CTA Buttons -->
+        <div class="flex flex-wrap items-center gap-3 sm:gap-4 mb-12">
+          <a href="#itinerary" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-2xl bg-indigoKaga hover:bg-indigoKaga/90 text-white font-medium text-sm sm:text-base shadow-craft transition-all">
+            <i data-lucide="calendar-days" class="w-5 h-5 text-goldLeaf"></i>
+            探索 17 日完整見習行程
+          </a>
+          <a href="#eligibility" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-2xl bg-white hover:bg-washiDark text-indigoKaga font-medium text-sm sm:text-base border border-stone-300 shadow-sm transition-all">
+            <i data-lucide="check-circle-2" class="w-5 h-5 text-forestKaga"></i>
+            青年申請資格自檢
+          </a>
+        </div>
+      </div>
+
+      <!-- Key Quick-Stats Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+        <!-- Stat 1: Dates -->
+        <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-5 border border-stone-200/90 shadow-craft hover:border-goldLeaf transition-colors">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-semibold uppercase tracking-wider text-inkMuted">圓夢見習期間</span>
+            <div class="w-8 h-8 rounded-lg bg-indigoKaga/10 flex items-center justify-center text-indigoKaga">
+              <i data-lucide="plane" class="w-4 h-4"></i>
+            </div>
+          </div>
+          <div class="font-mono font-bold text-lg sm:text-xl text-indigoKaga">2027/06/20 – 07/06</div>
+          <p class="text-xs text-inkMuted mt-1">民國 116 年｜含飛行日共 <span class="font-semibold text-crimsonKaga">17 日</span>（小松進出）</p>
+        </div>
+
+        <!-- Stat 2: Slots -->
+        <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-5 border border-stone-200/90 shadow-craft hover:border-goldLeaf transition-colors">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-semibold uppercase tracking-wider text-inkMuted">青年見習名額</span>
+            <div class="w-8 h-8 rounded-lg bg-crimsonKaga/10 flex items-center justify-center text-crimsonKaga">
+              <i data-lucide="users" class="w-4 h-4"></i>
+            </div>
+          </div>
+          <div class="font-serif font-bold text-2xl text-indigoKaga">10 <span class="text-sm font-sans font-normal text-inkMuted">名青年</span></div>
+          <p class="text-xs text-inkMuted mt-1">具中華民國國籍之 <span class="font-semibold text-indigoKaga">18 歲至 30 歲</span>青年</p>
+        </div>
+
+        <!-- Stat 3: Scholarship -->
+        <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-5 border border-stone-200/90 shadow-craft hover:border-goldLeaf transition-colors">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-semibold uppercase tracking-wider text-inkMuted">獎勵金總經費</span>
+            <div class="w-8 h-8 rounded-lg bg-goldLeaf/20 flex items-center justify-center text-ochreKaga">
+              <i data-lucide="award" class="w-4 h-4"></i>
+            </div>
+          </div>
+          <div class="font-mono font-bold text-xl sm:text-2xl text-indigoKaga">NT$ 250,000</div>
+          <p class="text-xs text-inkMuted mt-1">合作單位辦理 222,983 + 青年自理 27,017 元</p>
+        </div>
+
+        <!-- Stat 4: Institutions -->
+        <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-5 border border-stone-200/90 shadow-craft hover:border-goldLeaf transition-colors">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-semibold uppercase tracking-wider text-inkMuted">見習場域與機構</span>
+            <div class="w-8 h-8 rounded-lg bg-forestKaga/10 flex items-center justify-center text-forestKaga">
+              <i data-lucide="landmark" class="w-4 h-4"></i>
+            </div>
+          </div>
+          <div class="font-serif font-bold text-2xl text-indigoKaga">4 城 15+ <span class="text-sm font-sans font-normal text-inkMuted">據點</span></div>
+          <p class="text-xs text-inkMuted mt-1">橫跨能美、小松、加賀、金澤頂尖工房與美大</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Four Core Craft Pillars (四大工藝與產業軸線) -->
+  <section id="pillars" class="py-16 bg-washiDark/60 border-y border-stone-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+        <div>
+          <span class="font-mono text-xs font-semibold tracking-widest uppercase text-crimsonKaga">CRAFT ECOSYSTEMS</span>
+          <h2 class="font-serif font-bold text-2xl sm:text-3xl text-indigoKaga mt-1">石川縣四大傳統工藝與產業見習軸線</h2>
+        </div>
+        <p class="text-sm text-inkMuted max-w-xl">
+          不只是觀光體驗，本計畫聚焦「技術語言化、無鉛科學研究、品牌空間美學、青年職人育成體系」四大產業核心課題。
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Pillar 1: Kutani Ware -->
+        <div class="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm hover:shadow-craft transition-all flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-crimsonKaga text-white flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+              <i data-lucide="flame" class="w-6 h-6"></i>
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xs font-mono px-2 py-0.5 rounded bg-crimsonKaga/10 text-crimsonKaga font-medium">能美市・小松市</span>
+            </div>
+            <h3 class="font-serif font-bold text-xl text-indigoKaga mb-2">九谷燒 Kutani Ware</h3>
+            <p class="text-sm text-inkMuted leading-relaxed mb-4">
+              探索「九谷五彩」百年色彩體系與無鉛和繪具科學研究。從 CERABO KUTANI 瓷土基礎、宮吉製陶現代窯元營運、福島武山工房赤繪細描，到錦山窯「嘸旦-MUTAN-」金彩品牌美學。
+            </p>
+          </div>
+          <div class="pt-4 border-t border-stone-100 flex items-center justify-between text-xs font-medium text-crimsonKaga">
+            <span>重點行程：D2 – D5</span>
+            <a href="#itinerary" onclick="filterByKeyword('九谷燒')" class="inline-flex items-center gap-1 hover:underline">
+              篩選相關日程 <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Pillar 2: Yamanaka Lacquerware -->
+        <div class="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm hover:shadow-craft transition-all flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-ochreKaga text-white flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+              <i data-lucide="disc" class="w-6 h-6"></i>
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xs font-mono px-2 py-0.5 rounded bg-ochreKaga/15 text-ochreKaga font-medium">加賀市</span>
+            </div>
+            <h3 class="font-serif font-bold text-xl text-indigoKaga mb-2">山中漆器 Yamanaka</h3>
+            <p class="text-sm text-inkMuted leading-relaxed mb-4">
+              終日駐留「石川縣立山中漆器產業技術中心」，系統性驗證日本首屈一指的「轆轤車削（ろくろ挽き）」木胎工藝與「蒔繪（蒔絵）」職人育成手冊化機制與實作指導。
+            </p>
+          </div>
+          <div class="pt-4 border-t border-stone-100 flex items-center justify-between text-xs font-medium text-ochreKaga">
+            <span>重點行程：D6</span>
+            <a href="#itinerary" onclick="filterByKeyword('漆器')" class="inline-flex items-center gap-1 hover:underline">
+              篩選相關日程 <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Pillar 3: Kanazawa Gold Leaf -->
+        <div class="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm hover:shadow-craft transition-all flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-2xl gold-foil-shimmer text-indigoKaga flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+              <i data-lucide="sparkles" class="w-6 h-6"></i>
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xs font-mono px-2 py-0.5 rounded bg-goldLeaf/20 text-indigoKaga font-medium">金澤市</span>
+            </div>
+            <h3 class="font-serif font-bold text-xl text-indigoKaga mb-2">金澤金箔 Gold Leaf</h3>
+            <p class="text-sm text-inkMuted leading-relaxed mb-4">
+              深入金箔龍頭企業「株式會社箔一」，研習厚度僅 1 萬分之 1 毫米的金箔製造科技、現代化品質管理與商品化進程；並走訪東茶屋街與安江金箔工藝館，解析工藝觀光經濟。
+            </p>
+          </div>
+          <div class="pt-4 border-t border-stone-100 flex items-center justify-between text-xs font-medium text-indigoKaga">
+            <span>重點行程：D11 – D12</span>
+            <a href="#itinerary" onclick="filterByKeyword('金箔')" class="inline-flex items-center gap-1 hover:underline">
+              篩選相關日程 <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Pillar 4: Kaga Zogan & Youth Incubation -->
+        <div class="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm hover:shadow-craft transition-all flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-forestKaga text-white flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+              <i data-lucide="compass" class="w-6 h-6"></i>
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xs font-mono px-2 py-0.5 rounded bg-forestKaga/10 text-forestKaga font-medium">金澤市・公設育成</span>
+            </div>
+            <h3 class="font-serif font-bold text-xl text-indigoKaga mb-2">加賀象嵌與青年育成</h3>
+            <p class="text-sm text-inkMuted leading-relaxed mb-4">
+              於「宗桂會館」探究金屬鑲嵌工藝「加賀象嵌」；走訪金澤美術工藝大學、卯辰山工藝工房與傳統工藝產業館，驗證高等教育技術語言化與公設孵化器，並與石川青年職人對話發表。
+            </p>
+          </div>
+          <div class="pt-4 border-t border-stone-100 flex items-center justify-between text-xs font-medium text-forestKaga">
+            <span>重點行程：D9 – D10, D13 – D16</span>
+            <a href="#itinerary" onclick="filterByKeyword('象嵌')" class="inline-flex items-center gap-1 hover:underline">
+              篩選相關日程 <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Interactive 17-Day Itinerary Explorer -->
+  <section id="itinerary" class="py-16 sm:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="mb-8">
+        <span class="font-mono text-xs font-semibold tracking-widest uppercase text-crimsonKaga">17-DAY MASTER SCHEDULE</span>
+        <h2 class="font-serif font-bold text-2xl sm:text-4xl text-indigoKaga mt-1">2027/06/20 – 07/06 完整 17 日見習行程表</h2>
+        <p class="text-sm text-inkMuted mt-2">
+          點擊任一日程可展開「學習目的」與「個人筆記」；點擊書籤圖示可將重點日程收藏至「我的見習筆記清單」（自動儲存於瀏覽器）。
+        </p>
+      </div>
+
+      <!-- Controls: Phase Tabs + Search & Keyword Quick Chips -->
+      <div class="bg-white rounded-2xl p-4 sm:p-5 border border-stone-200 shadow-sm mb-8 space-y-4">
+        <!-- Phase Tabs -->
+        <div class="flex flex-wrap gap-2" id="phaseTabs">
+          <button onclick="setPhaseFilter('all')" data-phase="all" class="phase-btn active px-4 py-2 rounded-xl text-xs sm:text-sm font-medium bg-indigoKaga text-white transition-all cursor-pointer">
+            全部 17 日 (6/20–7/06)
+          </button>
+          <button onclick="setPhaseFilter('phase1')" data-phase="phase1" class="phase-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium bg-washiDark text-indigoKaga hover:bg-goldLeaf/20 transition-all cursor-pointer">
+            第一階段：加賀・九谷燒與山中漆器 (D1–D6)
+          </button>
+          <button onclick="setPhaseFilter('phase2')" data-phase="phase2" class="phase-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium bg-washiDark text-indigoKaga hover:bg-goldLeaf/20 transition-all cursor-pointer">
+            第二階段：金澤・金箔、象嵌與育成體系 (D7–D13)
+          </button>
+          <button onclick="setPhaseFilter('phase3')" data-phase="phase3" class="phase-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium bg-washiDark text-indigoKaga hover:bg-goldLeaf/20 transition-all cursor-pointer">
+            第三階段：調查整合與臺日職人對話發表 (D14–D17)
+          </button>
+        </div>
+
+        <!-- Search Input & Quick Tag Filters -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-3 border-t border-stone-100">
+          <div class="relative flex-1 max-w-md">
+            <i data-lucide="search" class="w-4 h-4 text-inkMuted absolute left-3.5 top-1/2 -translate-y-1/2"></i>
+            <input
+              type="text"
+              id="itinerarySearch"
+              oninput="renderItinerary()"
+              placeholder="搜尋日期、機構或關鍵字（如：赤繪、箔一、美大、登窯）..."
+              class="w-full pl-10 pr-9 py-2 rounded-xl bg-washi border border-stone-300 text-sm focus:outline-none focus:border-indigoKaga"
+            />
+            <button onclick="clearSearch()" id="clearSearchBtn" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-inkMuted hover:text-crimsonKaga">
+              <i data-lucide="x" class="w-4 h-4"></i>
+            </button>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-1.5 text-xs">
+            <span class="text-inkMuted mr-1">快速篩選：</span>
+            <button onclick="filterByKeyword('九谷燒')" class="px-2.5 py-1 rounded-lg bg-crimsonKaga/10 text-crimsonKaga hover:bg-crimsonKaga/20 font-medium cursor-pointer">#九谷燒</button>
+            <button onclick="filterByKeyword('漆器')" class="px-2.5 py-1 rounded-lg bg-ochreKaga/15 text-ochreKaga hover:bg-ochreKaga/25 font-medium cursor-pointer">#山中漆器</button>
+            <button onclick="filterByKeyword('金箔')" class="px-2.5 py-1 rounded-lg bg-goldLeaf/25 text-indigoKaga hover:bg-goldLeaf/40 font-medium cursor-pointer">#金澤金箔</button>
+            <button onclick="filterByKeyword('象嵌')" class="px-2.5 py-1 rounded-lg bg-forestKaga/10 text-forestKaga hover:bg-forestKaga/20 font-medium cursor-pointer">#加賀象嵌</button>
+            <button onclick="filterByKeyword('自由時間')" class="px-2.5 py-1 rounded-lg bg-stone-200/80 text-inkMuted hover:bg-stone-300 font-medium cursor-pointer">#自主調查</button>
+            <button onclick="expandAllDays(true)" class="ml-2 px-2.5 py-1 rounded-lg border border-stone-300 text-indigoKaga hover:bg-washiDark cursor-pointer">全部展開</button>
+            <button onclick="expandAllDays(false)" class="px-2.5 py-1 rounded-lg border border-stone-300 text-indigoKaga hover:bg-washiDark cursor-pointer">全部收合</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Itinerary Timeline Cards Container -->
+      <div id="itineraryList" class="space-y-4">
+        <!-- Populated dynamically by JavaScript -->
+      </div>
+
+      <!-- Empty Search State -->
+      <div id="itineraryEmpty" class="hidden text-center py-14 bg-white rounded-2xl border border-stone-200">
+        <i data-lucide="search-x" class="w-10 h-10 text-inkMuted mx-auto mb-3"></i>
+        <p class="font-serif font-bold text-lg text-indigoKaga">找不到符合條件的見習日程</p>
+        <p class="text-sm text-inkMuted mt-1 mb-4">請嘗試其他關鍵字或重設篩選條件。</p>
+        <button onclick="resetFilters()" class="px-4 py-2 rounded-xl bg-indigoKaga text-white text-sm font-medium cursor-pointer">顯示全部 17 天行程</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Host Institutions & Master Workshops Directory -->
+  <section id="institutions" class="py-16 bg-washiDark/70 border-y border-stone-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+        <div>
+          <span class="font-mono text-xs font-semibold tracking-widest uppercase text-crimsonKaga">HOST WORKSHOPS & MUSEUMS</span>
+          <h2 class="font-serif font-bold text-2xl sm:text-3xl text-indigoKaga mt-1">7 大核心見習機構與職人工房一覽</h2>
+        </div>
+
+        <!-- City Filter Pills -->
+        <div class="flex flex-wrap gap-2" id="cityFilters">
+          <button onclick="filterInstitutions('all')" data-city="all" class="city-btn px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-medium bg-indigoKaga text-white cursor-pointer">全部地區 (7)</button>
+          <button onclick="filterInstitutions('金澤市')" data-city="金澤市" class="city-btn px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-medium bg-white text-indigoKaga border border-stone-200 hover:border-goldLeaf cursor-pointer">金澤市 (2)</button>
+          <button onclick="filterInstitutions('能美市')" data-city="能美市" class="city-btn px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-medium bg-white text-indigoKaga border border-stone-200 hover:border-goldLeaf cursor-pointer">能美市 (2)</button>
+          <button onclick="filterInstitutions('小松市')" data-city="小松市" class="city-btn px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-medium bg-white text-indigoKaga border border-stone-200 hover:border-goldLeaf cursor-pointer">小松市 (2)</button>
+          <button onclick="filterInstitutions('加賀市')" data-city="加賀市" class="city-btn px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-medium bg-white text-indigoKaga border border-stone-200 hover:border-goldLeaf cursor-pointer">加賀市 (1)</button>
+        </div>
+      </div>
+
+      <div id="institutionsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Populated dynamically by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Eligibility Self-Check & Pre-Departure Training -->
+  <section id="eligibility" class="py-16 sm:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-10">
+        <span class="font-mono text-xs font-semibold tracking-widest uppercase text-crimsonKaga">QUALIFICATIONS & TRAINING</span>
+        <h2 class="font-serif font-bold text-2xl sm:text-3xl text-indigoKaga mt-1">青年申請資格自檢與行前培訓規範</h2>
+        <p class="text-sm text-inkMuted mt-2">
+          勾選下列條件，即時評估你是否符合《M-2-8 金澤職人夢》的申請門檻與遴選加分優勢。
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <!-- Left 7 Cols: Interactive Eligibility Checklist -->
+        <div class="lg:col-span-7 space-y-6">
+          <!-- Mandatory Criteria Card -->
+          <div class="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm">
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center gap-2.5">
+                <span class="w-8 h-8 rounded-lg bg-crimsonKaga text-white flex items-center justify-center font-bold text-sm">必</span>
+                <div>
+                  <h3 class="font-serif font-bold text-lg text-indigoKaga">必要條件（4 項皆須符合）</h3>
+                  <p class="text-xs text-inkMuted">點擊項目可進行自我檢核</p>
+                </div>
+              </div>
+              <span id="mandatoryScore" class="font-mono text-xs font-bold px-2.5 py-1 rounded-full bg-stone-100 text-indigoKaga">0 / 4 已符合</span>
+            </div>
+
+            <div class="space-y-3" id="mandatoryList">
+              <label class="flex items-start gap-3 p-3.5 rounded-xl bg-washi hover:bg-washiDark/70 border border-stone-200/80 cursor-pointer transition-colors">
+                <input type="checkbox" onchange="updateEligibilityStatus()" class="mandatory-chk mt-1 w-4 h-4 accent-indigoKaga rounded" />
+                <span class="text-sm text-ink leading-relaxed">
+                  <strong>1. 國籍與年齡：</strong>具中華民國國籍之 <span class="text-crimsonKaga font-semibold">18 歲至 30 歲</span>青年。
+                </span>
+              </label>
+
+              <label class="flex items-start gap-3 p-3.5 rounded-xl bg-washi hover:bg-washiDark/70 border border-stone-200/80 cursor-pointer transition-colors">
+                <input type="checkbox" onchange="updateEligibilityStatus()" class="mandatory-chk mt-1 w-4 h-4 accent-indigoKaga rounded" />
+                <span class="text-sm text-ink leading-relaxed">
+                  <strong>2. 全程參與與義務：</strong>能全程參與 17 日海外見習行程，並配合完成成果紀錄、社群宣傳等義務。
+                </span>
+              </label>
+
+              <label class="flex items-start gap-3 p-3.5 rounded-xl bg-washi hover:bg-washiDark/70 border border-stone-200/80 cursor-pointer transition-colors">
+                <input type="checkbox" onchange="updateEligibilityStatus()" class="mandatory-chk mt-1 w-4 h-4 accent-indigoKaga rounded" />
+                <span class="text-sm text-ink leading-relaxed">
+                  <strong>3. 行前培訓與語言加強：</strong>願配合行前培訓及全程參與交流，包括接受行前語言加強課程，以確保海外專業交流之基本溝通。
+                </span>
+              </label>
+
+              <label class="flex items-start gap-3 p-3.5 rounded-xl bg-washi hover:bg-washiDark/70 border border-stone-200/80 cursor-pointer transition-colors">
+                <input type="checkbox" onchange="updateEligibilityStatus()" class="mandatory-chk mt-1 w-4 h-4 accent-indigoKaga rounded" />
+                <span class="text-sm text-ink leading-relaxed">
+                  <strong>4. 外語溝通門檻：</strong>具備基礎日語會話及聽力能力（約 <span class="font-mono font-semibold text-indigoKaga">JLPT N4 / CEFR A2</span> 以上），或具備良好英語溝通能力（約 <span class="font-mono font-semibold text-indigoKaga">CEFR B1</span>）。
+                </span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Priority Criteria Card -->
+          <div class="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm">
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center gap-2.5">
+                <span class="w-8 h-8 rounded-lg bg-forestKaga text-white flex items-center justify-center font-bold text-sm">優</span>
+                <div>
+                  <h3 class="font-serif font-bold text-lg text-indigoKaga">優先遴選與加分條件（5 項）</h3>
+                  <p class="text-xs text-inkMuted">非本科系但具強烈學習熱忱者亦歡迎申請</p>
+                </div>
+              </div>
+              <span id="priorityScore" class="font-mono text-xs font-bold px-2.5 py-1 rounded-full bg-forestKaga/10 text-forestKaga">0 / 5 項加分</span>
+            </div>
+
+            <div class="space-y-3" id="priorityList">
+              <label class="flex items-start gap-3 p-3.5 rounded-xl bg-washi hover:bg-washiDark/70 border border-stone-200/80 cursor-pointer transition-colors">
+                <input type="checkbox" onchange="updateEligibilityStatus()" class="priority-chk mt-1 w-4 h-4 accent-forestKaga rounded" />
+                <span class="text-sm text-ink leading-relaxed">
+                  <strong>1. 專業背景或強烈意願：</strong>具備工藝、美術、設計、陶藝、漆藝、金工、染織、文化資產保存或文創產業背景或就學者（非本科系但懷有「無論如何都想投入學習」之強烈意願者，亦予接受）。
+                </span>
+              </label>
+
+              <label class="flex items-start gap-3 p-3.5 rounded-xl bg-washi hover:bg-washiDark/70 border border-stone-200/80 cursor-pointer transition-colors">
+                <input type="checkbox" onchange="updateEligibilityStatus()" class="priority-chk mt-1 w-4 h-4 accent-forestKaga rounded" />
+                <span class="text-sm text-ink leading-relaxed">
+                  <strong>2. 工藝文化熱忱：</strong>對日本傳統工藝（金箔、漆器、九谷燒等）、職人精神及地方文化傳承有濃厚興趣者。
+                </span>
+              </label>
+
+              <label class="flex items-start gap-3 p-3.5 rounded-xl bg-washi hover:bg-washiDark/70 border border-stone-200/80 cursor-pointer transition-colors">
+                <input type="checkbox" onchange="updateEligibilityStatus()" class="priority-chk mt-1 w-4 h-4 accent-forestKaga rounded" />
+                <span class="text-sm text-ink leading-relaxed">
+                  <strong>3. 進階日語能力加分：</strong>日語能力優於 N4 者（具備 <span class="font-mono font-semibold text-forestKaga">JLPT N3、N2、N1</span>）予以加分。
+                </span>
+              </label>
+
+              <label class="flex items-start gap-3 p-3.5 rounded-xl bg-washi hover:bg-washiDark/70 border border-stone-200/80 cursor-pointer transition-colors">
+                <input type="checkbox" onchange="updateEligibilityStatus()" class="priority-chk mt-1 w-4 h-4 accent-forestKaga rounded" />
+                <span class="text-sm text-ink leading-relaxed">
+                  <strong>4. 社群與影像紀錄專長：</strong>具備良好的溝通能力與社群媒體經營或影像紀錄拍攝能力者。
+                </span>
+              </label>
+
+              <label class="flex items-start gap-3 p-3.5 rounded-xl bg-washi hover:bg-washiDark/70 border border-stone-200/80 cursor-pointer transition-colors">
+                <input type="checkbox" onchange="updateEligibilityStatus()" class="priority-chk mt-1 w-4 h-4 accent-forestKaga rounded" />
+                <span class="text-sm text-ink leading-relaxed">
+                  <strong>5. 弱勢身分青年從優考量：</strong>經濟弱勢、原住民、偏遠地區、新住民子女等青年於遴選時從優考量。
+                </span>
+              </label>
+            </div>
+
+            <!-- Dynamic Readiness Banner -->
+            <div id="readinessResult" class="mt-5 p-4 rounded-xl bg-indigoKaga/5 border border-indigoKaga/15 flex items-center gap-3">
+              <i data-lucide="info" class="w-5 h-5 text-indigoKaga shrink-0"></i>
+              <p class="text-xs sm:text-sm text-indigoKaga">
+                請勾選上方條件，系統將自動為您評估申請資格符合度。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right 5 Cols: Pre-Departure Training Timeline -->
+        <div class="lg:col-span-5">
+          <div class="bg-indigoKaga text-washi rounded-2xl p-6 sm:p-8 shadow-craft sticky top-24">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-goldLeaf/20 text-goldLight text-xs font-medium mb-4">
+              <i data-lucide="alert-triangle" class="w-3.5 h-3.5"></i>
+              若無法參加視同放棄錄取資格
+            </div>
+
+            <h3 class="font-serif font-bold text-2xl text-white mb-2">行前培訓規劃（共 2 次・合計 8 小時）</h3>
+            <p class="text-sm text-stone-300 leading-relaxed mb-6">
+              於「錄取名單確定後、出國前 2 週內」辦理，均採<strong class="text-goldLight">臺北市實體（仁美國際會議室 / TAI-ONE SPACE 等）與線上同步</strong>方式進行。
+            </p>
+
+            <!-- Training Steps -->
+            <div class="space-y-6 relative before:content-[''] before:absolute before:left-3.5 before:top-2 before:bottom-2 before:w-0.5 before:bg-goldLeaf/40">
+              <!-- Session 1 -->
+              <div class="relative pl-10">
+                <div class="w-7 h-7 rounded-full bg-goldLeaf text-indigoKaga font-mono font-bold text-xs flex items-center justify-center absolute left-0 top-0.5">
+                  01
+                </div>
+                <div class="bg-white/10 rounded-xl p-4 border border-white/10">
+                  <div class="flex items-center justify-between text-xs text-goldLight font-mono mb-1">
+                    <span>第 1 次培訓｜出國前約 14 日</span>
+                    <span>約 4 小時</span>
+                  </div>
+                  <h4 class="font-serif font-bold text-base text-white mb-2">安全管理、行程分組與教材導讀</h4>
+                  <ul class="text-xs text-stone-200 space-y-1.5 list-disc list-inside">
+                    <li>海外研修安全與健康管理規範</li>
+                    <li>石川縣當地生活與跨城市交通說明</li>
+                    <li>17 日詳細行程與小組任務分組確認</li>
+                    <li>工藝專業行前教材導讀與預習說明</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Session 2 -->
+              <div class="relative pl-10">
+                <div class="w-7 h-7 rounded-full bg-goldLeaf text-indigoKaga font-mono font-bold text-xs flex items-center justify-center absolute left-0 top-0.5">
+                  02
+                </div>
+                <div class="bg-white/10 rounded-xl p-4 border border-white/10">
+                  <div class="flex items-center justify-between text-xs text-goldLight font-mono mb-1">
+                    <span>第 2 次培訓｜出國前約 7 日</span>
+                    <span>約 4 小時</span>
+                  </div>
+                  <h4 class="font-serif font-bold text-base text-white mb-2">工房實作禮儀、防護與紀錄片企畫</h4>
+                  <ul class="text-xs text-stone-200 space-y-1.5 list-disc list-inside">
+                    <li>日本職人工房實作禮儀與禁忌（如部分區域攝影限制）</li>
+                    <li>服裝及護具準備（如山中漆器之<span class="text-goldLight underline">漆液過敏防護</span>）</li>
+                    <li>個人紀錄片拍攝企畫討論與成果報告架構確認</li>
+                    <li>最終行前裝備與簽證保險確認</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: Transparent Budget Breakdown & Important Rules -->
+  <section id="budget" class="py-16 bg-washiDark/70 border-t border-stone-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-10">
+        <span class="font-mono text-xs font-semibold tracking-widest uppercase text-crimsonKaga">SCHOLARSHIP & COMPLIANCE</span>
+        <h2 class="font-serif font-bold text-2xl sm:text-3xl text-indigoKaga mt-1">獎勵金經費規劃（共 NT$ 250,000 元）與重要規範</h2>
+        <p class="text-sm text-inkMuted mt-2">
+          清楚透明呈現合作單位代辦經費與青年自理項目明細，協助青年妥善規劃海外見習財務。
+        </p>
+      </div>
+
+      <!-- Visual Proportion Bar -->
+      <div class="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm mb-8">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+          <span class="font-serif font-bold text-base text-indigoKaga">本案獎勵金總經費結構比例</span>
+          <span class="font-mono font-bold text-lg text-indigoKaga">合計 NT$ 250,000 元</span>
+        </div>
+        <div class="w-full h-5 rounded-full overflow-hidden flex bg-stone-100 p-0.5 border border-stone-200">
+          <div style="width: 89.19%" class="bg-indigoKaga h-full rounded-l-full flex items-center justify-center text-[10px] font-mono text-white font-semibold" title="合作單位辦理項目 89.2%">
+            合作單位辦理 89.2% (NT$ 222,983)
+          </div>
+          <div style="width: 10.81%" class="bg-goldLeaf h-full rounded-r-full flex items-center justify-center text-[10px] font-mono text-indigoKaga font-bold" title="青年自理項目 10.8%">
+            10.8%
+          </div>
+        </div>
+        <div class="flex flex-wrap items-center gap-6 mt-3 text-xs text-inkMuted">
+          <div class="flex items-center gap-2">
+            <span class="w-3 h-3 rounded-sm bg-indigoKaga inline-block"></span>
+            <span>合作單位辦理項目：<strong class="font-mono text-indigoKaga">NT$ 222,983</strong></span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-3 h-3 rounded-sm bg-goldLeaf inline-block"></span>
+            <span>青年自理項目：<strong class="font-mono text-indigoKaga">NT$ 27,017</strong></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Two Budget Tables -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-10">
+        <!-- Partner Agency Budget (7 Cols) -->
+        <div class="lg:col-span-7 bg-white rounded-2xl border border-stone-200 shadow-sm overflow-hidden">
+          <div class="bg-indigoKaga text-white px-6 py-4 flex items-center justify-between">
+            <div>
+              <h3 class="font-serif font-bold text-lg">合作單位辦理項目</h3>
+              <p class="text-xs text-stone-300">由執行單位統籌支應見習期間食宿、交通與研修費用</p>
+            </div>
+            <span class="font-mono font-bold text-lg text-goldLight">NT$ 222,983</span>
+          </div>
+          <div class="p-6 divide-y divide-stone-100 text-sm">
+            <div class="py-2.5 flex justify-between gap-4">
+              <span class="font-medium text-indigoKaga shrink-0">生活費</span>
+              <span class="text-inkMuted text-right">包含見習期間餐費、住宿費及當地交通費</span>
+            </div>
+            <div class="py-2.5 flex justify-between gap-4">
+              <span class="font-medium text-indigoKaga shrink-0">跨城市移動之交通費</span>
+              <span class="text-inkMuted text-right">支應跨城市移動至各見習機構所產生之大眾運輸、租車等相關費用</span>
+            </div>
+            <div class="py-2.5 flex justify-between gap-4">
+              <span class="font-medium text-indigoKaga shrink-0">機構註冊報名相關費用</span>
+              <span class="text-inkMuted text-right">能美市九谷燒美術館含專業導覽、石川縣九谷燒技術中心研修、CERABO KUTANI 等活動或機構費用</span>
+            </div>
+            <div class="py-2.5 flex justify-between gap-4">
+              <span class="font-medium text-indigoKaga shrink-0">翻譯費與講師鐘點費</span>
+              <span class="text-inkMuted text-right">專業課程、參訪專業內容中日口譯，以及行前培訓講師費用</span>
+            </div>
+            <div class="py-2.5 flex justify-between gap-4">
+              <span class="font-medium text-indigoKaga shrink-0">業師費用</span>
+              <span class="text-inkMuted text-right">辦理本計畫所需業師機票、保險、生活費、輔導費等</span>
+            </div>
+            <div class="py-2.5 flex justify-between gap-4">
+              <span class="font-medium text-indigoKaga shrink-0">設備、場地、印刷與行政</span>
+              <span class="text-inkMuted text-right">設備使用費、場地租借費、文件印刷裝訂、資料蒐集雜支及行政管理費</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Youth Self-Managed Budget (5 Cols) -->
+        <div class="lg:col-span-5 bg-white rounded-2xl border border-stone-200 shadow-sm overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="bg-goldLeaf/25 text-indigoKaga px-6 py-4 border-b border-goldLeaf/40 flex items-center justify-between">
+              <div>
+                <h3 class="font-serif font-bold text-lg">青年自理項目</h3>
+                <p class="text-xs text-inkMuted">撥付青年自行辦理機票、保險與零用支應</p>
+              </div>
+              <span class="font-mono font-bold text-lg text-crimsonKaga">NT$ 27,017</span>
+            </div>
+            <div class="p-6 space-y-4">
+              <div class="p-4 rounded-xl bg-washi border border-stone-200/80">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="font-bold text-indigoKaga">1. 機票費</span>
+                  <span class="font-mono font-bold text-indigoKaga">NT$ 20,000</span>
+                </div>
+                <p class="text-xs text-inkMuted">臺灣至計畫執行地（小松機場）之來回經濟艙機票。</p>
+              </div>
+
+              <div class="p-4 rounded-xl bg-washi border border-stone-200/80">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="font-bold text-indigoKaga">2. 青年零用金</span>
+                  <span class="font-mono font-bold text-indigoKaga">NT$ 5,217</span>
+                </div>
+                <p class="text-xs text-inkMuted">見習期間個人自主調查、自由時間餐食或文化體驗支用。</p>
+              </div>
+
+              <div class="p-4 rounded-xl bg-washi border border-stone-200/80">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="font-bold text-indigoKaga">3. 保險費</span>
+                  <span class="font-mono font-bold text-indigoKaga">NT$ 1,800</span>
+                </div>
+                <p class="text-xs text-inkMuted">須投保至少 <strong class="text-crimsonKaga">200 至 300 萬元意外險</strong>及 <strong class="text-crimsonKaga">20 至 50 萬元海外醫療險</strong>。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="px-6 py-3 bg-stone-50 border-t border-stone-200 text-xs text-inkMuted">
+            ※ 實際支用與核銷規定請依教育部青年發展署最新簡章公告為準。
+          </div>
+        </div>
+      </div>
+
+      <!-- Important Compliance Notices -->
+      <div class="bg-white rounded-2xl p-6 sm:p-8 border-l-4 border-crimsonKaga shadow-sm">
+        <div class="flex items-center gap-2.5 mb-4">
+          <i data-lucide="shield-alert" class="w-6 h-6 text-crimsonKaga"></i>
+          <h3 class="font-serif font-bold text-xl text-indigoKaga">其他重要注意事項與權利義務</h3>
+        </div>
+        <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-ink leading-relaxed">
+          <li class="flex items-start gap-2.5">
+            <span class="text-crimsonKaga font-bold mt-0.5">•</span>
+            <span><strong>簽證辦理期限：</strong>請依計畫內容辦理所需簽證，並於「圓夢期間」規定之出發日期前取得簽證；逾期未取得者，視同放棄錄取資格，不得提出異議。</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <span class="text-crimsonKaga font-bold mt-0.5">•</span>
+            <span><strong>全程參與義務：</strong>錄取者須全程參與計畫行程（含行前培訓、說明會、集訓及成果發表會），並配合合作單位相關行政作業。</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <span class="text-crimsonKaga font-bold mt-0.5">•</span>
+            <span><strong>請假與退費規範：</strong>出國圓夢期間不得因個人因素請假或無故缺席，若無法全程參與則視同未完成本計畫，須繳回未執行日數或全部之獎勵金金額。</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <span class="text-crimsonKaga font-bold mt-0.5">•</span>
+            <span><strong>紀律與法令遵循：</strong>青年若未能依據計畫學習、未能遵守團體規範或違反本國、當地國相關法令者，將提早終止計畫執行或酌情追回部分、全部獎勵金。</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-indigoKaga text-stone-300 py-12 border-t border-goldLeaf/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-8 border-b border-white/10">
+        <div>
+          <div class="flex items-center gap-2 mb-2">
+            <span class="font-mono text-xs px-2 py-0.5 rounded bg-goldLeaf text-indigoKaga font-bold">M-2-8</span>
+            <span class="font-serif font-bold text-xl text-white">金澤職人夢｜日本石川縣海外見習計畫</span>
+          </div>
+          <p class="text-xs sm:text-sm text-stone-400">
+            資料參考：青年百億海外圓夢基金計畫－海外翱翔組《M-2-8 金澤職人夢》簡章（116年6月20日至7月6日）。
+          </p>
+        </div>
+
+        <div class="flex flex-wrap gap-3">
+          <button onclick="openNotesModal()" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs sm:text-sm font-medium transition-colors cursor-pointer">
+            <i data-lucide="bookmark" class="w-4 h-4 text-goldLeaf"></i>
+            檢視我的見習筆記
+          </button>
+          <button onclick="openGithubModal()" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-goldLeaf hover:bg-goldLight text-indigoKaga text-xs sm:text-sm font-bold transition-colors cursor-pointer">
+            <i data-lucide="github" class="w-4 h-4"></i>
+            GitHub Pages 部署步驟
+          </button>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-400">
+        <p>※ 行程、見習機構及培訓場地等內容，教育部青年發展署及合作單位保有調整及最終解釋之權利。</p>
+        <p class="font-mono">Designed for GitHub Pages • Static Single-File Edition</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal 1: My Study Notes & Bookmarked Days Drawer/Modal -->
+  <div id="notesModal" class="hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4">
+    <div class="bg-washi rounded-2xl max-w-2xl w-full max-h-[85vh] flex flex-col border border-stone-300 shadow-2xl overflow-hidden">
+      <div class="bg-indigoKaga text-white px-6 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <i data-lucide="bookmark-check" class="w-5 h-5 text-goldLeaf"></i>
+          <h3 class="font-serif font-bold text-lg">我的見習筆記與重點收藏清單</h3>
+        </div>
+        <button onclick="closeNotesModal()" class="p-1.5 rounded-lg hover:bg-white/10 text-stone-300 hover:text-white cursor-pointer">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <div id="notesModalBody" class="p-6 overflow-y-auto space-y-4 flex-1">
+        <!-- Populated dynamically -->
+      </div>
+
+      <div class="px-6 py-4 bg-white border-t border-stone-200 flex flex-wrap items-center justify-between gap-3">
+        <button onclick="copyNotesToClipboard()" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-forestKaga hover:bg-forestKaga/90 text-white text-xs sm:text-sm font-medium cursor-pointer">
+          <i data-lucide="copy" class="w-4 h-4"></i>
+          複製全部筆記（供撰寫申請企畫書）
+        </button>
+        <button onclick="closeNotesModal()" class="px-4 py-2 rounded-xl bg-stone-200 hover:bg-stone-300 text-indigoKaga text-xs sm:text-sm font-medium cursor-pointer">
+          關閉視窗
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: GitHub Pages Deployment Guide Modal -->
+  <div id="githubModal" class="hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4">
+    <div class="bg-washi rounded-2xl max-w-xl w-full border border-stone-300 shadow-2xl overflow-hidden">
+      <div class="bg-indigoKaga text-white px-6 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <i data-lucide="github" class="w-5 h-5 text-goldLeaf"></i>
+          <h3 class="font-serif font-bold text-lg">GitHub Pages 免費靜態網站部署指南</h3>
+        </div>
+        <button onclick="closeGithubModal()" class="p-1.5 rounded-lg hover:bg-white/10 text-stone-300 hover:text-white cursor-pointer">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <div class="p-6 space-y-4 text-sm text-ink leading-relaxed">
+        <p class="text-inkMuted">
+          本網站已專為 <strong class="text-indigoKaga">GitHub Pages</strong> 設計為「零建置（Zero-Build）單一 HTML 檔案」，無需安裝 Node.js 或任何打包工具，只需 3 個步驟即可上線分享：
+        </p>
+
+        <div class="space-y-3">
+          <div class="p-3.5 rounded-xl bg-white border border-stone-200">
+            <div class="font-mono text-xs font-bold text-crimsonKaga mb-1">STEP 01｜建立 GitHub Repository</div>
+            <p class="text-xs sm:text-sm">登入 GitHub，點擊右上角 <strong>+ → New repository</strong>，輸入專案名稱（例如 <code class="font-mono bg-stone-100 px-1.5 py-0.5 rounded">kanazawa-artisan-dream</code>），設為 <strong>Public</strong> 並建立。</p>
+          </div>
+
+          <div class="p-3.5 rounded-xl bg-white border border-stone-200">
+            <div class="font-mono text-xs font-bold text-crimsonKaga mb-1">STEP 02｜上傳本網頁檔案為 index.html</div>
+            <p class="text-xs sm:text-sm">點擊 <strong>Add file → Upload files</strong>，將本網頁存成 <code class="font-mono bg-stone-100 px-1.5 py-0.5 rounded">index.html</code> 拖曳上傳，並點擊 <strong>Commit changes</strong>。</p>
+          </div>
+
+          <div class="p-3.5 rounded-xl bg-white border border-stone-200">
+            <div class="font-mono text-xs font-bold text-crimsonKaga mb-1">STEP 03｜開啟 GitHub Pages</div>
+            <p class="text-xs sm:text-sm">進入專案上方的 <strong>Settings → Pages</strong>，在 Branch 選擇 <strong>main</strong> 與 <strong>/ (root)</strong> 後按 Save。約 1 分鐘後即可獲得專屬公開網址！</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="px-6 py-4 bg-white border-t border-stone-200 flex justify-end">
+        <button onclick="closeGithubModal()" class="px-5 py-2 rounded-xl bg-indigoKaga text-white text-sm font-medium cursor-pointer">
+          我知道了
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="fixed bottom-5 right-5 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-indigoKaga text-white px-4 py-3 rounded-xl shadow-lg border border-goldLeaf/50 text-xs sm:text-sm flex items-center gap-2">
+    <i data-lucide="check-circle" class="w-4 h-4 text-goldLeaf"></i>
+    <span id="toastMsg">已儲存</span>
+  </div>
+
+  <!-- Complete Data & Interactive Logic -->
+  <script>
+    // =========================================================================
+    // 1. COMPLETE 17-DAY ITINERARY DATA (2027/06/20 - 2027/07/06, 民國116年)
+    // =========================================================================
+    const itineraryData = [
+      {
+        day: 1,
+        date: "2027/06/20",
+        rocDate: "116/06/20 (日)",
+        phase: "phase1",
+        city: "臺灣 → 小松 → 加賀地區",
+        craftTag: "啟程移動",
+        tagColor: "bg-indigoKaga/10 text-indigoKaga",
+        theme: "啟程：臺灣 → 小松機場 → 移動至加賀地區",
+        activities: [
+          "自臺灣出發飛往日本石川縣小松機場（KMQ）",
+          "抵達後專車/大眾運輸移動至加賀溫泉鄉地區",
+          "辦理飯店入住手續與現地環境安全確認，為 17 日職人見習揭開序幕"
+        ],
+        objective: "【適應現地環境與團隊整備】建立團隊跨文化移動默契，調整身心狀態以迎接隔日展開之九谷燒與山中漆器密集研修。"
+      },
+      {
+        day: 2,
+        date: "2027/06/21",
+        rocDate: "116/06/21 (一)",
+        phase: "phase1",
+        city: "能美市",
+        craftTag: "九谷燒",
+        tagColor: "bg-crimsonKaga/10 text-crimsonKaga",
+        theme: "九谷燒百年色彩體系專業工藝產業導覽與研究",
+        activities: [
+          "能美市九谷燒美術館・五彩館 ＆ 淺藏五十吉紀念館見學",
+          "石川縣九谷燒技術中心（含技術研修所）設施見學與專業導覽"
+        ],
+        objective: "【九谷五彩之色彩表現與青年獨立支援基礎設施】徹底驗證巨匠名品之美學，以及無鉛和繪具之最新科學研究、支援年輕作家自立之公設育成體系。"
+      },
+      {
+        day: 3,
+        date: "2027/06/22",
+        rocDate: "116/06/22 (二)",
+        phase: "phase1",
+        city: "能美市・小松市",
+        craftTag: "九谷燒",
+        tagColor: "bg-crimsonKaga/10 text-crimsonKaga",
+        theme: "從瓷土到現代窯元",
+        activities: [
+          "CERABO KUTANI（九谷陶瓷實驗室）課堂學習瓷土製造基礎，並進行手捏陶體驗研修",
+          "宮吉製陶（株式会社宮吉製陶）專業工藝產業導覽與研究"
+        ],
+        objective: "【從原料科學到現代窯元實務】深入理解九谷燒花坂陶石製土工藝，並於現代代表性窯元學習窯元營運、製程管理與量產品質實務。"
+      },
+      {
+        day: 4,
+        date: "2027/06/23",
+        rocDate: "116/06/23 (三)",
+        phase: "phase1",
+        city: "能美市",
+        craftTag: "九谷燒",
+        tagColor: "bg-crimsonKaga/10 text-crimsonKaga",
+        theme: "九谷燒赤繪細描核心實作日",
+        activities: [
+          "石川縣立九谷燒美術館專業導覽",
+          "福島武山工房、陶藝晄（陶芸晄）之工房專業工藝指導與交流"
+        ],
+        objective: "【赤繪細描技法與作家實踐】深入頂尖職人工坊，近距離觀察並體驗極致細膩的「赤繪細描」等九谷燒代表技法，串聯歷史起源與現代作家創作實踐。"
+      },
+      {
+        day: 5,
+        date: "2027/06/24",
+        rocDate: "116/06/24 (四)",
+        phase: "phase1",
+        city: "加賀市・小松市",
+        craftTag: "九谷燒・金彩",
+        tagColor: "bg-crimsonKaga/10 text-crimsonKaga",
+        theme: "再興九谷的瓷窯構造與金彩品牌行銷",
+        activities: [
+          "上午：九谷燒窯跡歷史背景說明，參觀現存最古老的九谷燒登窯",
+          "下午：錦山窯（株式会社錦山窯）展示空間「嘸旦-MUTAN-」專業導覽與交流"
+        ],
+        objective: "【再興九谷之磁器窯構造與極限金彩意匠之品牌經營】上午參觀現存最古老之九谷燒登窯；下午於名門錦山窯「嘸旦」學習傳承 110 餘年之金彩技術，以及昇華為現代藝術・設計之頂級空間美學（工藝行銷）。"
+      },
+      {
+        day: 6,
+        date: "2027/06/25",
+        rocDate: "116/06/25 (五)",
+        phase: "phase1",
+        city: "加賀市",
+        craftTag: "山中漆器",
+        tagColor: "bg-ochreKaga/15 text-ochreKaga",
+        theme: "山中漆器・轆轤車削與蒔繪之系統驗證",
+        activities: [
+          "終日駐留「石川縣立山中漆器產業技術中心」進行專業研修",
+          "接受山中漆器轆轤車削等實作指導與系統驗證"
+        ],
+        objective: "【轆轤車削與蒔繪技術之系統驗證】終日駐留公設之職人育成機構，徹底調查山中漆器引以為傲之「轆轤車削（ろくろ挽き）」與「蒔繪（蒔絵)」之指導體系與手冊化機制，並接受轆轤車削等之實作指導與驗證。"
+      },
+      {
+        day: 7,
+        date: "2027/06/26",
+        rocDate: "116/06/26 (六)",
+        phase: "phase2",
+        city: "加賀 → 金澤市",
+        craftTag: "據點轉移・整理",
+        tagColor: "bg-indigoKaga/10 text-indigoKaga",
+        theme: "加賀 → 移動至金澤・飯店辦理入住與資料整理",
+        activities: [
+          "結束加賀地區窯元與漆器研修，跨城市移動至金澤市區",
+          "金澤飯店辦理入住",
+          "第一階段田野資料蒐集與學習報告整理"
+        ],
+        objective: "【研修據點轉換與知識沉澱】完成加賀南部產地見習後轉進金澤城下町核心，系統化整理前六日拍攝影像與筆記。"
+      },
+      {
+        day: 8,
+        date: "2027/06/27",
+        rocDate: "116/06/27 (日)",
+        phase: "phase2",
+        city: "金澤市",
+        craftTag: "自由時間・自主調查",
+        tagColor: "bg-stone-200 text-inkMuted",
+        theme: "自由時間：金澤市內自主調查・休息調整",
+        activities: [
+          "金澤市內工藝街區、美術館或選品店自主田野調查與身心休息調整",
+          "第一週學習內容整理，包含個人報告及紀錄片影片初稿撰擬"
+        ],
+        objective: "【自主視角探索與階段性產出】培養青年獨立田野觀察力，並確保第一週學習脈絡轉化為具體文字與影像初稿。"
+      },
+      {
+        day: 9,
+        date: "2027/06/28",
+        rocDate: "116/06/28 (一)",
+        phase: "phase2",
+        city: "金澤市",
+        craftTag: "傳統工藝36業種",
+        tagColor: "bg-forestKaga/10 text-forestKaga",
+        theme: "傳統工藝 36 業種與現代市場",
+        activities: [
+          "於石川縣立傳統工藝產業館（いしかわ生活工芸ミュージアム）進行特別講座與專業導覽",
+          "專業導覽金澤・Craft 廣坂（クラフト広坂）"
+        ],
+        objective: "【傳統工藝 36 業種之色彩體系與現代工藝市場調查】綜合學習石川・金澤多樣傳統工藝之基礎知識，並透過 Craft 廣坂實地調查當代工藝品的定價、陳列與市場流通機制。"
+      },
+      {
+        day: 10,
+        date: "2027/06/29",
+        rocDate: "116/06/29 (二)",
+        phase: "phase2",
+        city: "金澤市",
+        craftTag: "美大與公設孵化器",
+        tagColor: "bg-forestKaga/10 text-forestKaga",
+        theme: "高等教育中的技術語言化與公設孵化器",
+        activities: [
+          "金澤美術工藝大學（工藝科）技術交流",
+          "金澤卯辰山工藝工房專業導覽與工藝產業研究"
+        ],
+        objective: "【高等教育中技術之語言化與公設孵化器】驗證高度工藝教育制度與支援年輕作家獨立之基礎設施。由館方導覽，聚焦工藝史脈絡、材料應用、品牌轉譯及地方創生模式，並作為成果報告比較分析素材。"
+      },
+      {
+        day: 11,
+        date: "2027/06/30",
+        rocDate: "116/06/30 (三)",
+        phase: "phase2",
+        city: "金澤市",
+        craftTag: "金澤金箔",
+        tagColor: "bg-goldLeaf/25 text-indigoKaga",
+        theme: "金箔製造科技與品質管理",
+        activities: [
+          "株式會社箔一（Hakuichi）總店專業導覽",
+          "箔一工廠研習：金箔製造工序、品質管理與商品化應用"
+        ],
+        objective: "【金箔製造科技與品質管理】至金箔龍頭企業，學習 1 萬分之 1 毫米的金箔製造工藝流程，以及現代化的品質管理系統、美妝與生活工藝商品化進程。"
+      },
+      {
+        day: 12,
+        date: "2027/07/01",
+        rocDate: "116/07/01 (四)",
+        phase: "phase2",
+        city: "金澤市（東山）",
+        craftTag: "金澤金箔・觀光設計",
+        tagColor: "bg-goldLeaf/25 text-indigoKaga",
+        theme: "傳統工藝 × 觀光之品牌昇華",
+        activities: [
+          "東山・東茶屋街區域（工藝 × 觀光街區營造）實地考察",
+          "金澤市立安江金箔工藝館訪問"
+        ],
+        objective: "【傳統工藝昇華為觀光經濟之品牌設計】以東茶屋街為模型，學習傳統工藝如何與歷史建築保存結合，被設計為具國際魅力之商業・觀光內容。"
+      },
+      {
+        day: 13,
+        date: "2027/07/02",
+        rocDate: "116/07/02 (五)",
+        phase: "phase2",
+        city: "金澤市",
+        craftTag: "加賀象嵌",
+        tagColor: "bg-forestKaga/10 text-forestKaga",
+        theme: "加賀象嵌的金屬鑲嵌技法與社群傳承",
+        activities: [
+          "宗桂會館（公益財團法人宗桂会）加賀象嵌專門美術館專業導覽",
+          "加賀象嵌作家工坊交流與技法解說"
+        ],
+        objective: "【加賀象嵌之金屬鑲嵌技法與社群傳承】調查金澤舉世聞名之金屬加飾技術「加賀象嵌」之精密鑲嵌技法，以及公益財團法人與職人間的師徒社群傳承系統。"
+      },
+      {
+        day: 14,
+        date: "2027/07/03",
+        rocDate: "116/07/03 (六)",
+        phase: "phase3",
+        city: "金澤市",
+        craftTag: "自由時間・發表準備",
+        tagColor: "bg-stone-200 text-inkMuted",
+        theme: "自由時間：個人資料整理與金澤自主調查",
+        activities: [
+          "為 D16 成果發表會整理個人田野研究資料與比較分析架構",
+          "或於金澤市內進行補充性自主調查與素材補拍"
+        ],
+        objective: "【研究成果收斂】將兩週來跨足陶、漆、箔、金工與孵化器的觀察，收斂為具個人設計或產業觀點的發表論述。"
+      },
+      {
+        day: 15,
+        date: "2027/07/04",
+        rocDate: "116/07/04 (日)",
+        phase: "phase3",
+        city: "金澤市",
+        craftTag: "成果準備・業師面談",
+        tagColor: "bg-indigoKaga/10 text-indigoKaga",
+        theme: "成果發表準備及業師面談",
+        activities: [
+          "彙整翌日發表會之簡報資料與視覺呈現",
+          "一對一或分組業師面談指導，提出完整學習報告及紀錄片初稿"
+        ],
+        objective: "【業師指導與發表優化】透過隨團業師專業回饋，精煉簡報邏輯與日/英語交流表達，確保能與日本青年職人深度對話。"
+      },
+      {
+        day: 16,
+        date: "2027/07/05",
+        rocDate: "116/07/05 (一)",
+        phase: "phase3",
+        city: "金澤市",
+        craftTag: "臺日對話・成果發表",
+        tagColor: "bg-crimsonKaga/10 text-crimsonKaga",
+        theme: "臺日青年職人的現實課題對話 ＋ 成果發表",
+        activities: [
+          "與「石川縣傳統青年會議」進行座談會與現實課題對話",
+          "17 日海外見習成果發表會"
+        ],
+        objective: "【臺日青年職人之真實課題對話與資料總括・發表】以 15 日研修所累積之資料為基礎發表成果，並與石川在地青年職人就傳承困境、品牌創新等真實課題進行跨國討論。"
+      },
+      {
+        day: 17,
+        date: "2027/07/06",
+        rocDate: "116/07/06 (二)",
+        phase: "phase3",
+        city: "金澤市 → 小松 → 臺灣",
+        craftTag: "圓夢賦歸",
+        tagColor: "bg-indigoKaga/10 text-indigoKaga",
+        theme: "賦歸：金澤市內 → 移動至小松機場 → 返回臺灣",
+        activities: [
+          "整理行囊自金澤市內出發前往小松機場",
+          "搭機返回臺灣，圓滿完成 17 日《金澤職人夢》海外見習"
+        ],
+        objective: "【攜回職人精神與未來行動】將石川縣見習所獲之工藝研究與產業洞察帶回臺灣，持續推進個人創作、研究或地方創生行動。"
+      }
+    ];
+
+    // =========================================================================
+    // 2. HOST INSTITUTIONS DIRECTORY DATA (7 Core Institutions from PDF p.1-2)
+    // =========================================================================
+    const institutionsData = [
+      {
+        name: "株式會社箔一",
+        jpName: "株式会社箔一 (Hakuichi)",
+        city: "金澤市",
+        craft: "金澤金箔",
+        badgeColor: "bg-goldLeaf/25 text-indigoKaga",
+        days: "D11 (6/30)",
+        desc: "金澤金箔代表性龍頭企業，預定辦理 1 萬分之 1 毫米金箔製作工序、工廠研修、品質管理系統、商品化應用及品牌經營等研習內容。",
+        url: "https://www.hakuichi.co.jp/"
+      },
+      {
+        name: "福島武山工房",
+        jpName: "福島武山工房",
+        city: "能美市",
+        craft: "九谷燒・赤繪細描",
+        badgeColor: "bg-crimsonKaga/10 text-crimsonKaga",
+        days: "D4 (6/23)",
+        desc: "九谷燒「赤繪細描」代表工房之一，由名匠領軍，預定辦理赤繪細描技法近距離觀摩、專業導覽及工房創作交流。",
+        url: "https://www.instagram.com/fukushima_buzan_kutani/"
+      },
+      {
+        name: "陶藝晄",
+        jpName: "陶芸晄",
+        city: "能美市",
+        craft: "九谷燒作家工房",
+        badgeColor: "bg-crimsonKaga/10 text-crimsonKaga",
+        days: "D4 (6/23)",
+        desc: "九谷燒代表性作家工房，預定辦理九谷燒繪付技法示範、當代陶藝作家面對面交流與工房實務研修。",
+        url: "https://kutani-midori.jimdofree.com/"
+      },
+      {
+        name: "宮吉製陶",
+        jpName: "株式会社宮吉製陶",
+        city: "小松市",
+        craft: "九谷燒現代窯元",
+        badgeColor: "bg-crimsonKaga/10 text-crimsonKaga",
+        days: "D3 (6/22)",
+        desc: "九谷燒重要現代窯元，預定辦理窯元現代化營運模式、成型與燒成製程導覽及產業實務研修。",
+        url: "https://miyayoshiseitou.jp/"
+      },
+      {
+        name: "宗桂會館",
+        jpName: "公益財團法人宗桂会",
+        city: "金澤市",
+        craft: "加賀象嵌",
+        badgeColor: "bg-forestKaga/10 text-forestKaga",
+        days: "D13 (7/02)",
+        desc: "加賀象嵌專門美術館與文化推廣據點，預定辦理專業館藏導覽、金屬鑲嵌技法說明與加賀象嵌職人社群交流。",
+        url: "https://www.soukeikai.or.jp/"
+      },
+      {
+        name: "石川縣立山中漆器產業技術中心",
+        jpName: "石川県立山中漆器産業技術センター",
+        city: "加賀市",
+        craft: "山中漆器",
+        badgeColor: "bg-ochreKaga/15 text-ochreKaga",
+        days: "D6 (6/25)",
+        desc: "日本重要之山中漆器公設研修設施，預定辦理轆轤車削（ろくろ挽き）、蒔繪（蒔絵）指導體系驗證及相關漆藝實作研修。",
+        url: "https://yamanaka696.org/"
+      },
+      {
+        name: "錦山窯（嘸旦 -MUTAN-）",
+        jpName: "株式会社錦山窯",
+        city: "小松市",
+        craft: "九谷燒・極限金彩",
+        badgeColor: "bg-crimsonKaga/10 text-crimsonKaga",
+        days: "D5 (6/24)",
+        desc: "傳承逾 110 年之九谷燒名門窯元，設有頂級展示空間「嘸旦-MUTAN-」，預定辦理展示空間導覽、品牌經營觀察與金彩技法交流。",
+        url: "https://kinzangama.com/"
+      }
+    ];
+
+    // =========================================================================
+    // 3. STATE MANAGEMENT (Bookmarks & Personal Notes in localStorage)
+    // =========================================================================
+    let currentPhase = "all";
+    let expandedDays = new Set([2, 4, 6, 11, 16]); // Default expanded highlights
+    let savedNotes = {}; // { [dayNumber]: { bookmarked: boolean, note: string } }
+
+    try {
+      const stored = localStorage.getItem("kanazawa_m28_notes");
+      if (stored) savedNotes = JSON.parse(stored);
+    } catch (e) {
+      console.warn("localStorage unavailable", e);
+    }
+
+    function persistNotes() {
+      try {
+        localStorage.setItem("kanazawa_m28_notes", JSON.stringify(savedNotes));
+      } catch (e) {
+        console.warn("Failed to save to localStorage", e);
+      }
+      updateSavedBadge();
+    }
+
+    function updateSavedBadge() {
+      const count = Object.values(savedNotes).filter(item => item.bookmarked || (item.note && item.note.trim().length > 0)).length;
+      document.getElementById("savedCountBadge").textContent = count;
+    }
+
+    function toggleBookmark(day, event) {
+      if (event) event.stopPropagation();
+      if (!savedNotes[day]) savedNotes[day] = { bookmarked: false, note: "" };
+      savedNotes[day].bookmarked = !savedNotes[day].bookmarked;
+      persistNotes();
+      renderItinerary();
+      showToast(savedNotes[day].bookmarked ? `已將 Day ${day} 加入見習收藏` : `已取消 Day ${day} 收藏`);
+    }
+
+    function saveDayNote(day, value) {
+      if (!savedNotes[day]) savedNotes[day] = { bookmarked: false, note: "" };
+      savedNotes[day].note = value;
+      if (value.trim().length > 0) {
+        savedNotes[day].bookmarked = true;
+      }
+      persistNotes();
+    }
+
+    // =========================================================================
+    // 4. RENDER ITINERARY TIMELINE
+    // =========================================================================
+    function setPhaseFilter(phase) {
+      currentPhase = phase;
+      document.querySelectorAll(".phase-btn").forEach(btn => {
+        if (btn.dataset.phase === phase) {
+          btn.classList.remove("bg-washiDark", "text-indigoKaga");
+          btn.classList.add("bg-indigoKaga", "text-white");
+        } else {
+          btn.classList.remove("bg-indigoKaga", "text-white");
+          btn.classList.add("bg-washiDark", "text-indigoKaga");
+        }
+      });
+      renderItinerary();
+    }
+
+    function filterByKeyword(keyword) {
+      const input = document.getElementById("itinerarySearch");
+      input.value = keyword;
+      setPhaseFilter("all");
+      renderItinerary();
+    }
+
+    function clearSearch() {
+      document.getElementById("itinerarySearch").value = "";
+      renderItinerary();
+    }
+
+    function resetFilters() {
+      document.getElementById("itinerarySearch").value = "";
+      setPhaseFilter("all");
+    }
+
+    function toggleDayExpand(day) {
+      if (expandedDays.has(day)) {
+        expandedDays.delete(day);
+      } else {
+        expandedDays.add(day);
+      }
+      renderItinerary();
+    }
+
+    function expandAllDays(expand) {
+      if (expand) {
+        itineraryData.forEach(d => expandedDays.add(d.day));
+      } else {
+        expandedDays.clear();
+      }
+      renderItinerary();
+    }
+
+    function renderItinerary() {
+      const container = document.getElementById("itineraryList");
+      const emptyState = document.getElementById("itineraryEmpty");
+      const query = document.getElementById("itinerarySearch").value.trim().toLowerCase();
+      const clearBtn = document.getElementById("clearSearchBtn");
+
+      if (query.length > 0) {
+        clearBtn.classList.remove("hidden");
+      } else {
+        clearBtn.classList.add("hidden");
+      }
+
+      const filtered = itineraryData.filter(item => {
+        const matchPhase = currentPhase === "all" || item.phase === currentPhase;
+        const searchableText = `${item.day} ${item.date} ${item.rocDate} ${item.city} ${item.craftTag} ${item.theme} ${item.activities.join(" ")} ${item.objective}`.toLowerCase();
+        const matchQuery = !query || searchableText.includes(query);
+        return matchPhase && matchQuery;
+      });
+
+      if (filtered.length === 0) {
+        container.innerHTML = "";
+        emptyState.classList.remove("hidden");
+        return;
+      }
+
+      emptyState.classList.add("hidden");
+
+      container.innerHTML = filtered.map(item => {
+        const isExpanded = expandedDays.has(item.day);
+        const dayState = savedNotes[item.day] || { bookmarked: false, note: "" };
+        const hasNote = dayState.note && dayState.note.trim().length > 0;
+
+        return `
+          <div class="bg-white rounded-2xl border ${dayState.bookmarked ? 'border-goldLeaf shadow-gold/20' : 'border-stone-200/90'} shadow-xs transition-all overflow-hidden">
+            <!-- Card Header (Clickable Accordion Trigger) -->
+            <div onclick="toggleDayExpand(${item.day})" class="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 cursor-pointer hover:bg-washi/60 transition-colors">
+              <div class="flex items-start sm:items-center gap-3.5">
+                <!-- Day Badge -->
+                <div class="w-14 h-14 rounded-xl bg-indigoKaga text-white flex flex-col items-center justify-center shrink-0 border border-goldLeaf/40">
+                  <span class="text-[10px] font-mono uppercase tracking-wider text-goldLight">DAY</span>
+                  <span class="font-mono font-bold text-lg leading-none">${String(item.day).padStart(2, '0')}</span>
+                </div>
+
+                <div>
+                  <div class="flex flex-wrap items-center gap-2 mb-1">
+                    <span class="font-mono text-xs font-semibold text-indigoKaga">${item.date}</span>
+                    <span class="text-xs text-inkMuted">${item.rocDate}</span>
+                    <span class="text-xs px-2 py-0.5 rounded-md font-medium ${item.tagColor}">${item.craftTag}</span>
+                    <span class="inline-flex items-center gap-1 text-xs text-inkMuted">
+                      <i data-lucide="map-pin" class="w-3 h-3 text-crimsonKaga"></i>${item.city}
+                    </span>
+                  </div>
+                  <h3 class="font-serif font-bold text-base sm:text-lg text-indigoKaga leading-snug">
+                    ${item.theme}
+                  </h3>
+                </div>
+              </div>
+
+              <!-- Right Controls -->
+              <div class="flex items-center justify-end gap-2 shrink-0 self-end sm:self-center">
+                ${hasNote ? `<span class="text-[11px] font-medium px-2 py-0.5 rounded-full bg-forestKaga/10 text-forestKaga">已寫筆記</span>` : ''}
+                <button
+                  onclick="toggleBookmark(${item.day}, event)"
+                  title="收藏此日行程"
+                  class="p-2 rounded-xl border ${dayState.bookmarked ? 'bg-goldLeaf/20 border-goldLeaf text-crimsonKaga' : 'bg-washi border-stone-200 text-inkMuted hover:text-indigoKaga'} transition-colors cursor-pointer"
+                >
+                  <i data-lucide="bookmark" class="w-4 h-4 ${dayState.bookmarked ? 'fill-crimsonKaga text-crimsonKaga' : ''}"></i>
+                </button>
+                <div class="p-2 rounded-xl text-indigoKaga">
+                  <i data-lucide="${isExpanded ? 'chevron-up' : 'chevron-down'}" class="w-5 h-5"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion Expanded Body -->
+            <div class="${isExpanded ? 'block' : 'hidden'} px-4 pb-5 sm:px-6 sm:pb-6 pt-2 border-t border-stone-100 bg-washi/40">
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 mt-2">
+                <!-- Activities List -->
+                <div class="lg:col-span-6 space-y-2">
+                  <div class="text-xs font-mono font-bold uppercase tracking-wider text-indigoKaga flex items-center gap-1.5">
+                    <i data-lucide="list-checks" class="w-4 h-4 text-crimsonKaga"></i>
+                    當日見習與參訪內容
+                  </div>
+                  <ul class="space-y-1.5 text-sm text-ink pl-1">
+                    ${item.activities.map(act => `
+                      <li class="flex items-start gap-2">
+                        <span class="w-1.5 h-1.5 rounded-full bg-goldLeaf mt-2 shrink-0"></span>
+                        <span>${act}</span>
+                      </li>
+                    `).join('')}
+                  </ul>
+                </div>
+
+                <!-- Learning Objective Box -->
+                <div class="lg:col-span-6">
+                  <div class="p-4 rounded-xl bg-white border border-goldLeaf/40 shadow-2xs">
+                    <div class="text-xs font-mono font-bold uppercase tracking-wider text-crimsonKaga flex items-center gap-1.5 mb-1.5">
+                      <i data-lucide="target" class="w-4 h-4"></i>
+                      學習目的與產業研究重點
+                    </div>
+                    <p class="text-sm text-ink leading-relaxed">
+                      ${item.objective}
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Personal Study Note Input -->
+              <div class="mt-4 pt-4 border-t border-stone-200/70">
+                <label class="block text-xs font-medium text-inkMuted mb-1.5 flex items-center gap-1.5">
+                  <i data-lucide="pen-line" class="w-3.5 h-3.5 text-forestKaga"></i>
+                  我的行前研究提問 / 紀錄片拍攝備忘（自動儲存）：
+                </label>
+                <input
+                  type="text"
+                  value="${(dayState.note || '').replace(/"/g, '&quot;')}"
+                  oninput="saveDayNote(${item.day}, this.value)"
+                  placeholder="例如：想請教職人無鉛和繪具的發色差異、或拍攝轆轤車削特寫鏡頭..."
+                  class="w-full px-3.5 py-2 rounded-xl bg-white border border-stone-300 text-xs sm:text-sm focus:outline-none focus:border-forestKaga"
+                />
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      lucide.createIcons();
+    }
+
+    // =========================================================================
+    // 5. RENDER HOST INSTITUTIONS DIRECTORY
+    // =========================================================================
+    function filterInstitutions(city) {
+      document.querySelectorAll(".city-btn").forEach(btn => {
+        if (btn.dataset.city === city) {
+          btn.classList.remove("bg-white", "text-indigoKaga", "border", "border-stone-200");
+          btn.classList.add("bg-indigoKaga", "text-white");
+        } else {
+          btn.classList.remove("bg-indigoKaga", "text-white");
+          btn.classList.add("bg-white", "text-indigoKaga", "border", "border-stone-200");
+        }
+      });
+
+      const grid = document.getElementById("institutionsGrid");
+      const filtered = city === "all" ? institutionsData : institutionsData.filter(inst => inst.city === city);
+
+      grid.innerHTML = filtered.map(inst => `
+        <div class="bg-white rounded-2xl p-6 border border-stone-200 shadow-xs hover:shadow-craft hover:border-goldLeaf transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="text-xs font-medium px-2.5 py-1 rounded-lg ${inst.badgeColor}">${inst.craft}</span>
+              <span class="font-mono text-xs text-inkMuted bg-washi px-2 py-0.5 rounded border border-stone-200">${inst.city}・${inst.days}</span>
+            </div>
+            <h3 class="font-serif font-bold text-xl text-indigoKaga">${inst.name}</h3>
+            <p class="text-xs text-inkMuted font-medium mt-0.5 mb-3">${inst.jpName}</p>
+            <p class="text-sm text-ink leading-relaxed mb-5">
+              ${inst.desc}
+            </p>
+          </div>
+          <div class="pt-4 border-t border-stone-100 flex items-center justify-between">
+            <span class="text-xs text-inkMuted">官方參考網站</span>
+            <a href="${inst.url}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-medium text-indigoKaga hover:text-crimsonKaga transition-colors">
+              前往機構網頁 <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+      `).join('');
+
+      lucide.createIcons();
+    }
+
+    // =========================================================================
+    // 6. ELIGIBILITY SELF-CHECK LOGIC
+    // =========================================================================
+    function updateEligibilityStatus() {
+      const mandatoryChecked = document.querySelectorAll(".mandatory-chk:checked").length;
+      const priorityChecked = document.querySelectorAll(".priority-chk:checked").length;
+
+      document.getElementById("mandatoryScore").textContent = `${mandatoryChecked} / 4 已符合`;
+      document.getElementById("priorityScore").textContent = `${priorityChecked} / 5 項加分`;
+
+      const resultBox = document.getElementById("readinessResult");
+
+      if (mandatoryChecked === 4) {
+        resultBox.className = "mt-5 p-4 rounded-xl bg-forestKaga/10 border border-forestKaga/30 flex items-start gap-3";
+        resultBox.innerHTML = `
+          <i data-lucide="check-circle-2" class="w-5 h-5 text-forestKaga shrink-0 mt-0.5"></i>
+          <div class="text-xs sm:text-sm text-forestKaga">
+            <strong>恭喜！你已完全符合 4 項必要申請資格！</strong>
+            <p class="mt-1 text-ink">目前同時具備 <strong>${priorityChecked} 項</strong>優先加分條件。建議立即使用上方「17 日行程表」收藏感興趣的職人工房並撰寫研究筆記，作為申請計畫書的亮點素材！</p>
+          </div>
+        `;
+      } else {
+        const missing = 4 - mandatoryChecked;
+        resultBox.className = "mt-5 p-4 rounded-xl bg-amber-50 border border-amber-200 flex items-start gap-3";
+        resultBox.innerHTML = `
+          <i data-lucide="alert-circle" class="w-5 h-5 text-ochreKaga shrink-0 mt-0.5"></i>
+          <div class="text-xs sm:text-sm text-ink">
+            <strong>尚有 ${missing} 項必要條件未勾選</strong>
+            <p class="mt-1 text-inkMuted">申請本計畫須同時滿足 4 項必要條件（如年齡 18–30 歲、JLPT N4 或 CEFR B1 語言門檻、全程參與 17 日見習與行前培訓）。</p>
+          </div>
+        `;
+      }
+      lucide.createIcons();
+    }
+
+    // =========================================================================
+    // 7. MODALS, CLIPBOARD & MOBILE MENU
+    // =========================================================================
+    function toggleMobileMenu() {
+      document.getElementById("mobileMenu").classList.toggle("hidden");
+    }
+
+    function openNotesModal() {
+      const modal = document.getElementById("notesModal");
+      const body = document.getElementById("notesModalBody");
+
+      const savedEntries = itineraryData.filter(d => {
+        const st = savedNotes[d.day];
+        return st && (st.bookmarked || (st.note && st.note.trim().length > 0));
+      });
+
+      if (savedEntries.length === 0) {
+        body.innerHTML = `
+          <div class="text-center py-10">
+            <i data-lucide="bookmark" class="w-10 h-10 text-stone-300 mx-auto mb-3"></i>
+            <p class="font-serif font-bold text-base text-indigoKaga">尚未收藏任何見習日程</p>
+            <p class="text-xs sm:text-sm text-inkMuted mt-1">請在「17 日完整行程表」中點擊書籤圖示，或輸入您的研究備忘筆記。</p>
+          </div>
+        `;
+      } else {
+        body.innerHTML = savedEntries.map(d => {
+          const st = savedNotes[d.day];
+          return `
+            <div class="p-4 rounded-xl bg-white border border-stone-200 shadow-2xs">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-mono text-xs font-bold text-crimsonKaga">DAY ${String(d.day).padStart(2, '0')}・${d.date} (${d.city})</span>
+                <button onclick="toggleBookmark(${d.day}); openNotesModal();" class="text-xs text-inkMuted hover:text-crimsonKaga cursor-pointer">移除收藏</button>
+              </div>
+              <h4 class="font-serif font-bold text-base text-indigoKaga mb-1">${d.theme}</h4>
+              <p class="text-xs text-inkMuted mb-2">${d.objective}</p>
+              ${st.note ? `<div class="p-2.5 rounded-lg bg-forestKaga/10 text-xs text-forestKaga font-medium">筆記：${st.note}</div>` : ''}
+            </div>
+          `;
+        }).join('');
+      }
+
+      modal.classList.remove("hidden");
+      lucide.createIcons();
+    }
+
+    function closeNotesModal() {
+      document.getElementById("notesModal").classList.add("hidden");
+    }
+
+    function copyNotesToClipboard() {
+      const savedEntries = itineraryData.filter(d => {
+        const st = savedNotes[d.day];
+        return st && (st.bookmarked || (st.note && st.note.trim().length > 0));
+      });
+
+      if (savedEntries.length === 0) {
+        showToast("目前沒有可複製的收藏筆記");
+        return;
+      }
+
+      const text = [
+        "【M-2-8 金澤職人夢｜我的 17 日見習重點筆記】",
+        "見習期間：2027/06/20 – 2027/07/06（日本石川縣）",
+        "----------------------------------------",
+        ...savedEntries.map(d => {
+          const st = savedNotes[d.day];
+          return `Day ${d.day} (${d.date})｜${d.theme}\n地點：${d.city}\n學習目的：${d.objective}${st.note ? `\n個人筆記：${st.note}` : ''}\n`;
+        })
+      ].join("\n");
+
+      const textarea = document.createElement("textarea");
+      textarea.value = text;
+      document.body.appendChild(textarea);
+      textarea.select();
+      try {
+        document.execCommand("copy");
+        showToast("已將全部見習筆記複製到剪貼簿！");
+      } catch (err) {
+        showToast("複製失敗，請手動選取文字複製");
+      }
+      document.body.removeChild(textarea);
+    }
+
+    function openGithubModal() {
+      document.getElementById("githubModal").classList.remove("hidden");
+      lucide.createIcons();
+    }
+
+    function closeGithubModal() {
+      document.getElementById("githubModal").classList.add("hidden");
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById("toast");
+      document.getElementById("toastMsg").textContent = msg;
+      toast.classList.remove("translate-y-20", "opacity-0");
+      setTimeout(() => {
+        toast.classList.add("translate-y-20", "opacity-0");
+      }, 2600);
+    }
+
+    // Close modals when clicking backdrop
+    window.addEventListener("click", (e) => {
+      if (e.target.id === "notesModal") closeNotesModal();
+      if (e.target.id === "githubModal") closeGithubModal();
+    });
+
+    // Initialize Page
+    document.addEventListener("DOMContentLoaded", () => {
+      renderItinerary();
+      filterInstitutions("all");
+      updateSavedBadge();
+      lucide.createIcons();
+    });
+  </script>
+</body>
+</html>
