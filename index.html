@@ -115,12 +115,12 @@
         </a>
 
         <!-- Desktop Navigation -->
-        <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-inkMuted">
-          <a href="#pillars" class="hover:text-indigoKaga transition-colors">四大工藝軸線</a>
-          <a href="#itinerary" class="hover:text-indigoKaga transition-colors">17日完整行程</a>
-          <a href="#institutions" class="hover:text-indigoKaga transition-colors">見習職人機構</a>
-          <a href="#eligibility" class="hover:text-indigoKaga transition-colors">申請資格與培訓</a>
-          <a href="#budget" class="hover:text-indigoKaga transition-colors">經費與規範</a>
+        <nav class="hidden lg:flex items-center gap-5 text-sm font-medium text-inkMuted">
+          <a href="#itinerary" class="hover:text-indigoKaga transition-colors">行程與日期選單</a>
+          <a href="#institutions" class="hover:text-indigoKaga transition-colors">工房地圖名錄</a>
+          <a href="#packing" class="hover:text-indigoKaga transition-colors">行前準備清單</a>
+          <a href="#budget" class="hover:text-indigoKaga transition-colors">預算花費紀錄</a>
+          <a href="#eligibility" class="hover:text-indigoKaga transition-colors">資格與培訓</a>
         </nav>
 
         <!-- Action Buttons -->
@@ -146,11 +146,11 @@
 
     <!-- Mobile Navigation Dropdown -->
     <div id="mobileMenu" class="hidden lg:hidden bg-washi border-b border-stone-200 px-4 pt-2 pb-4 space-y-2">
-      <a href="#pillars" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg text-sm font-medium text-indigoKaga hover:bg-washiDark">四大工藝與產業軸線</a>
-      <a href="#itinerary" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg text-sm font-medium text-indigoKaga hover:bg-washiDark">17日完整見習行程 (6/20–7/6)</a>
-      <a href="#institutions" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg text-sm font-medium text-indigoKaga hover:bg-washiDark">7大核心見習職人機構</a>
+      <a href="#itinerary" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg text-sm font-medium text-indigoKaga hover:bg-washiDark">17日見習行程與日期選單 (6/20–7/6)</a>
+      <a href="#institutions" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg text-sm font-medium text-indigoKaga hover:bg-washiDark">7大見習機構與 Google Maps 名錄</a>
+      <a href="#packing" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg text-sm font-medium text-indigoKaga hover:bg-washiDark">行前準備清單（可勾選與自訂）</a>
+      <a href="#budget" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg text-sm font-medium text-indigoKaga hover:bg-washiDark">獎助經費與預算花費紀錄</a>
       <a href="#eligibility" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg text-sm font-medium text-indigoKaga hover:bg-washiDark">青年申請資格與行前培訓</a>
-      <a href="#budget" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg text-sm font-medium text-indigoKaga hover:bg-washiDark">獎助經費規劃與注意事項</a>
     </div>
   </header>
 
@@ -185,13 +185,17 @@
 
         <!-- Primary CTA Buttons -->
         <div class="flex flex-wrap items-center gap-3 sm:gap-4 mb-12">
-          <a href="#itinerary" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-2xl bg-indigoKaga hover:bg-indigoKaga/90 text-white font-medium text-sm sm:text-base shadow-craft transition-all">
+          <a href="#itinerary" class="inline-flex items-center gap-2 px-5 py-3.5 rounded-2xl bg-indigoKaga hover:bg-indigoKaga/90 text-white font-medium text-sm sm:text-base shadow-craft transition-all">
             <i data-lucide="calendar-days" class="w-5 h-5 text-goldLeaf"></i>
-            探索 17 日完整見習行程
+            17 日行程與日期選單
           </a>
-          <a href="#eligibility" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-2xl bg-white hover:bg-washiDark text-indigoKaga font-medium text-sm sm:text-base border border-stone-300 shadow-sm transition-all">
-            <i data-lucide="check-circle-2" class="w-5 h-5 text-forestKaga"></i>
-            青年申請資格自檢
+          <a href="#packing" class="inline-flex items-center gap-2 px-5 py-3.5 rounded-2xl bg-white hover:bg-washiDark text-indigoKaga font-medium text-sm sm:text-base border border-stone-300 shadow-sm transition-all">
+            <i data-lucide="check-square" class="w-5 h-5 text-forestKaga"></i>
+            行前準備清單
+          </a>
+          <a href="#budget" class="inline-flex items-center gap-2 px-5 py-3.5 rounded-2xl bg-white hover:bg-washiDark text-indigoKaga font-medium text-sm sm:text-base border border-stone-300 shadow-sm transition-all">
+            <i data-lucide="wallet" class="w-5 h-5 text-crimsonKaga"></i>
+            預算花費紀錄
           </a>
         </div>
       </div>
@@ -358,12 +362,46 @@
   <section id="itinerary" class="py-16 sm:py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Section Header -->
-      <div class="mb-8">
-        <span class="font-mono text-xs font-semibold tracking-widest uppercase text-crimsonKaga">17-DAY MASTER SCHEDULE</span>
-        <h2 class="font-serif font-bold text-2xl sm:text-4xl text-indigoKaga mt-1">2027/06/20 – 07/06 完整 17 日見習行程表</h2>
-        <p class="text-sm text-inkMuted mt-2">
-          點擊任一日程可展開「學習目的」與「個人筆記」；點擊書籤圖示可將重點日程收藏至「我的見習筆記清單」（自動儲存於瀏覽器）。
-        </p>
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
+        <div>
+          <span class="font-mono text-xs font-semibold tracking-widest uppercase text-crimsonKaga">17-DAY MASTER SCHEDULE & GOOGLE MAPS</span>
+          <h2 class="font-serif font-bold text-2xl sm:text-4xl text-indigoKaga mt-1">2027/06/20 – 07/06 完整 17 日見習行程表</h2>
+          <p class="text-sm text-inkMuted mt-2">
+            點選下方「日期快速選單」可直接聚焦或跳轉至該日行程；每站景點均附 <strong class="text-indigoKaga">Google Maps 地圖連結</strong>與個人筆記欄位。
+          </p>
+        </div>
+
+        <!-- Dropdown Date Jump Selector -->
+        <div class="flex items-center gap-2 shrink-0">
+          <label for="dateJumpSelect" class="text-xs font-medium text-inkMuted whitespace-nowrap">快速跳轉日期：</label>
+          <select
+            id="dateJumpSelect"
+            onchange="selectSpecificDay(this.value)"
+            class="px-3 py-2 rounded-xl bg-white border border-stone-300 text-xs sm:text-sm font-medium text-indigoKaga focus:outline-none focus:border-indigoKaga shadow-2xs cursor-pointer"
+          >
+            <option value="all">顯示全部 17 天行程 (6/20–7/06)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- NEW: Interactive Horizontal 17-Day Clickable Date Strip -->
+      <div class="bg-white rounded-2xl p-3.5 sm:p-4 border border-stone-200 shadow-sm mb-6">
+        <div class="flex items-center justify-between mb-2.5 px-1">
+          <span class="text-xs font-mono font-bold text-indigoKaga flex items-center gap-1.5">
+            <i data-lucide="calendar" class="w-3.5 h-3.5 text-crimsonKaga"></i>
+            可點選日期選單（點擊單日篩選，再次點擊或按「全部」恢復）
+          </span>
+          <button
+            onclick="selectSpecificDay('all')"
+            id="showAllDaysBtn"
+            class="text-xs font-medium px-2.5 py-1 rounded-lg bg-indigoKaga text-white hover:bg-indigoKaga/90 transition-colors cursor-pointer"
+          >
+            顯示全部 17 天
+          </button>
+        </div>
+        <div id="dateStripContainer" class="flex items-center gap-2 overflow-x-auto pb-2 pt-0.5">
+          <!-- Populated dynamically by JavaScript -->
+        </div>
       </div>
 
       <!-- Controls: Phase Tabs + Search & Keyword Quick Chips -->
@@ -453,8 +491,67 @@
     </div>
   </section>
 
+  <!-- NEW SECTION: Interactive Pre-Departure Packing & Preparation Checklist -->
+  <section id="packing" class="py-16 sm:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+        <div>
+          <span class="font-mono text-xs font-semibold tracking-widest uppercase text-crimsonKaga">PRE-DEPARTURE CHECKLIST</span>
+          <h2 class="font-serif font-bold text-2xl sm:text-3xl text-indigoKaga mt-1">行前準備清單（可勾選・自動儲存）</h2>
+          <p class="text-sm text-inkMuted mt-2">
+            依據《M-2-8 金澤職人夢》簡章規範整理（含漆液過敏防護、海外醫療險門檻與紀錄片器材），支援自行新增個人物品。
+          </p>
+        </div>
+
+        <button onclick="resetPackingChecklist()" class="self-start md:self-auto inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white hover:bg-washiDark text-inkMuted hover:text-crimsonKaga text-xs font-medium border border-stone-300 transition-colors cursor-pointer">
+          <i data-lucide="rotate-ccw" class="w-3.5 h-3.5"></i>
+          重設預設清單
+        </button>
+      </div>
+
+      <!-- Progress Bar & Add Custom Item Bar -->
+      <div class="bg-white rounded-2xl p-5 sm:p-6 border border-stone-200 shadow-sm mb-8 space-y-5">
+        <div>
+          <div class="flex items-center justify-between text-sm mb-2">
+            <span class="font-serif font-bold text-indigoKaga">行前打包與行政完成進度</span>
+            <span id="packingProgressText" class="font-mono font-bold text-forestKaga">0 / 0 項已完成 (0%)</span>
+          </div>
+          <div class="w-full h-3.5 rounded-full bg-stone-100 overflow-hidden border border-stone-200">
+            <div id="packingProgressBar" style="width: 0%" class="h-full bg-forestKaga transition-all duration-300 rounded-full"></div>
+          </div>
+        </div>
+
+        <!-- Add Custom Packing Item Form -->
+        <form onsubmit="addCustomPackingItem(event)" class="pt-4 border-t border-stone-100 flex flex-col sm:flex-row gap-2.5">
+          <select id="newPackingCategory" class="px-3.5 py-2.5 rounded-xl bg-washi border border-stone-300 text-xs sm:text-sm font-medium text-indigoKaga focus:outline-none focus:border-indigoKaga">
+            <option value="docs">證件與計畫行政</option>
+            <option value="craft">工房實作與防護</option>
+            <option value="media">影音紀錄與田野調查</option>
+            <option value="life">生活衣物與日幣現金</option>
+          </select>
+          <input
+            type="text"
+            id="newPackingInput"
+            required
+            placeholder="新增自訂準備項目（例如：作品集明信片、備用記憶卡、暈車藥）..."
+            class="flex-1 px-4 py-2.5 rounded-xl bg-washi border border-stone-300 text-sm focus:outline-none focus:border-indigoKaga"
+          />
+          <button type="submit" class="inline-flex items-center justify-center gap-1.5 px-5 py-2.5 rounded-xl bg-indigoKaga hover:bg-indigoKaga/90 text-white text-sm font-medium shrink-0 cursor-pointer">
+            <i data-lucide="plus" class="w-4 h-4 text-goldLeaf"></i>
+            新增項目
+          </button>
+        </form>
+      </div>
+
+      <!-- 4-Category Checklist Grid -->
+      <div id="packingGrid" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Populated dynamically by JavaScript -->
+      </div>
+    </div>
+  </section>
+
   <!-- Section 5: Eligibility Self-Check & Pre-Departure Training -->
-  <section id="eligibility" class="py-16 sm:py-20">
+  <section id="eligibility" class="py-16 sm:py-20 bg-washiDark/50 border-t border-stone-200/80">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="mb-10">
         <span class="font-mono text-xs font-semibold tracking-widest uppercase text-crimsonKaga">QUALIFICATIONS & TRAINING</span>
@@ -751,6 +848,172 @@
         </div>
       </div>
 
+      <!-- NEW: Interactive Youth Expense & Budget Tracker -->
+      <div class="bg-white rounded-2xl p-6 sm:p-8 border border-stone-200 shadow-craft mb-10">
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-6 border-b border-stone-200">
+          <div>
+            <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md bg-goldLeaf/20 text-indigoKaga font-mono text-xs font-bold mb-1.5">
+              YOUTH EXPENSE TRACKER
+            </div>
+            <h3 class="font-serif font-bold text-xl sm:text-2xl text-indigoKaga">個人預算花費紀錄表（支援臺幣 TWD ／ 日圓 JPY 雙幣記帳）</h3>
+            <p class="text-xs sm:text-sm text-inkMuted mt-1">
+              對照青年自理額度 <strong class="text-indigoKaga font-mono">NT$ 27,017</strong>（機票 20,000 ＋ 零用金 5,217 ＋ 保險 1,800），隨時掌握海外見習開銷與結餘。
+            </p>
+          </div>
+
+          <!-- Editable JPY Exchange Rate -->
+          <div class="flex items-center gap-2.5 bg-washi px-4 py-2.5 rounded-xl border border-stone-200 self-start lg:self-auto">
+            <span class="text-xs font-medium text-inkMuted">日圓匯率設定：1 JPY =</span>
+            <input
+              type="number"
+              id="jpyRateInput"
+              step="0.001"
+              min="0.05"
+              max="1"
+              value="0.215"
+              onchange="updateExchangeRate(this.value)"
+              class="w-20 px-2 py-1 rounded-lg bg-white border border-stone-300 font-mono text-xs font-bold text-indigoKaga text-right focus:outline-none focus:border-indigoKaga"
+            />
+            <span class="text-xs font-mono font-semibold text-indigoKaga">TWD</span>
+          </div>
+        </div>
+
+        <!-- Summary Metrics Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 my-6">
+          <div class="p-4 rounded-xl bg-washi border border-stone-200">
+            <span class="text-xs text-inkMuted">青年自理總額度</span>
+            <div class="font-mono font-bold text-xl text-indigoKaga mt-1">NT$ 27,017</div>
+            <span class="text-[11px] text-inkMuted">含機票、保險與零用金</span>
+          </div>
+
+          <div class="p-4 rounded-xl bg-washi border border-stone-200">
+            <span class="text-xs text-inkMuted">目前已登錄花費（折合臺幣）</span>
+            <div id="expenseTotalTwd" class="font-mono font-bold text-xl text-crimsonKaga mt-1">NT$ 0</div>
+            <span id="expenseTotalJpy" class="text-[11px] font-mono text-inkMuted">其中日圓消費：¥0</span>
+          </div>
+
+          <div class="p-4 rounded-xl bg-washi border border-stone-200">
+            <span class="text-xs text-inkMuted">自理總額度剩餘結餘</span>
+            <div id="expenseRemainingTwd" class="font-mono font-bold text-xl text-forestKaga mt-1">NT$ 27,017</div>
+            <span id="expenseRemainingHint" class="text-[11px] text-forestKaga">預算控制良好</span>
+          </div>
+
+          <div class="p-4 rounded-xl bg-washi border border-stone-200">
+            <span class="text-xs text-inkMuted">現地零用金（5,217元）剩餘</span>
+            <div id="pocketRemainingTwd" class="font-mono font-bold text-xl text-ochreKaga mt-1">NT$ 5,217</div>
+            <span class="text-[11px] text-inkMuted">扣除機票與保險後可用於日本現地</span>
+          </div>
+        </div>
+
+        <!-- Add Expense Form -->
+        <form onsubmit="addExpenseEntry(event)" class="bg-washi/80 p-4 rounded-2xl border border-stone-200 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-3 mb-6">
+          <div class="lg:col-span-2">
+            <label class="block text-[11px] font-medium text-inkMuted mb-1">日期</label>
+            <select id="expDate" class="w-full px-3 py-2 rounded-xl bg-white border border-stone-300 text-xs sm:text-sm text-indigoKaga focus:outline-none">
+              <option value="行前準備">行前準備</option>
+              <option value="D1 06/20">D1 (06/20)</option>
+              <option value="D2 06/21">D2 (06/21)</option>
+              <option value="D3 06/22">D3 (06/22)</option>
+              <option value="D4 06/23">D4 (06/23)</option>
+              <option value="D5 06/24">D5 (06/24)</option>
+              <option value="D6 06/25">D6 (06/25)</option>
+              <option value="D7 06/26">D7 (06/26)</option>
+              <option value="D8 06/27">D8 (06/27 自由日)</option>
+              <option value="D9 06/28">D9 (06/28)</option>
+              <option value="D10 06/29">D10 (06/29)</option>
+              <option value="D11 06/30">D11 (06/30)</option>
+              <option value="D12 07/01">D12 (07/01)</option>
+              <option value="D13 07/02">D13 (07/02)</option>
+              <option value="D14 07/03">D14 (07/03 自由日)</option>
+              <option value="D15 07/04">D15 (07/04)</option>
+              <option value="D16 07/05">D16 (07/05)</option>
+              <option value="D17 07/06">D17 (07/06)</option>
+            </select>
+          </div>
+
+          <div class="lg:col-span-2">
+            <label class="block text-[11px] font-medium text-inkMuted mb-1">支出類別</label>
+            <select id="expCategory" class="w-full px-3 py-2 rounded-xl bg-white border border-stone-300 text-xs sm:text-sm text-indigoKaga focus:outline-none">
+              <option value="機票交通">機票交通</option>
+              <option value="保險行政">保險行政</option>
+              <option value="工藝體驗/作品">工藝體驗/作品</option>
+              <option value="書籍與美術館">書籍與美術館</option>
+              <option value="餐飲與伴手禮">餐飲與伴手禮</option>
+              <option value="其他雜支">其他雜支</option>
+            </select>
+          </div>
+
+          <div class="lg:col-span-4">
+            <label class="block text-[11px] font-medium text-inkMuted mb-1">花費項目說明</label>
+            <input
+              type="text"
+              id="expTitle"
+              required
+              placeholder="例如：小松來回機票、東茶屋街金箔體驗、九谷燒圖錄..."
+              class="w-full px-3.5 py-2 rounded-xl bg-white border border-stone-300 text-xs sm:text-sm focus:outline-none focus:border-indigoKaga"
+            />
+          </div>
+
+          <div class="lg:col-span-2">
+            <label class="block text-[11px] font-medium text-inkMuted mb-1">金額與幣別</label>
+            <div class="flex rounded-xl overflow-hidden border border-stone-300 bg-white">
+              <select id="expCurrency" class="px-2 py-2 bg-stone-100 text-xs font-mono font-bold text-indigoKaga border-r border-stone-300 focus:outline-none">
+                <option value="TWD">TWD</option>
+                <option value="JPY">JPY ¥</option>
+              </select>
+              <input
+                type="number"
+                id="expAmount"
+                required
+                min="1"
+                step="any"
+                placeholder="金額"
+                class="w-full px-2.5 py-2 text-xs sm:text-sm font-mono focus:outline-none"
+              />
+            </div>
+          </div>
+
+          <div class="lg:col-span-2 flex items-end">
+            <button type="submit" class="w-full py-2 px-4 rounded-xl bg-indigoKaga hover:bg-indigoKaga/90 text-white text-xs sm:text-sm font-medium inline-flex items-center justify-center gap-1.5 cursor-pointer">
+              <i data-lucide="plus-circle" class="w-4 h-4 text-goldLeaf"></i>
+              新增花費
+            </button>
+          </div>
+        </form>
+
+        <!-- Expense List Header & Export -->
+        <div class="flex items-center justify-between mb-3">
+          <h4 class="font-serif font-bold text-base text-indigoKaga">花費明細紀錄</h4>
+          <div class="flex items-center gap-2">
+            <button onclick="exportExpensesCsv()" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-forestKaga/10 hover:bg-forestKaga/20 text-forestKaga text-xs font-medium cursor-pointer">
+              <i data-lucide="download" class="w-3.5 h-3.5"></i>
+              匯出 CSV 報表
+            </button>
+            <button onclick="resetDefaultExpenses()" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg border border-stone-200 text-inkMuted hover:text-crimsonKaga text-xs cursor-pointer">
+              重設範例
+            </button>
+          </div>
+        </div>
+
+        <div class="overflow-x-auto border border-stone-200 rounded-xl">
+          <table class="w-full text-left border-collapse text-xs sm:text-sm">
+            <thead>
+              <tr class="bg-washi border-b border-stone-200 text-inkMuted font-medium">
+                <th class="py-3 px-4">日期</th>
+                <th class="py-3 px-4">類別</th>
+                <th class="py-3 px-4">項目說明</th>
+                <th class="py-3 px-4 text-right">原始金額</th>
+                <th class="py-3 px-4 text-right">折合臺幣 (TWD)</th>
+                <th class="py-3 px-4 text-center">操作</th>
+              </tr>
+            </thead>
+            <tbody id="expenseTableBody" class="divide-y divide-stone-100">
+              <!-- Populated dynamically by JavaScript -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
       <!-- Important Compliance Notices -->
       <div class="bg-white rounded-2xl p-6 sm:p-8 border-l-4 border-crimsonKaga shadow-sm">
         <div class="flex items-center gap-2.5 mb-4">
@@ -893,13 +1156,19 @@
 
   <!-- Complete Data & Interactive Logic -->
   <script>
+    // Helper function to generate accurate Google Maps search URLs
+    function gmapUrl(query) {
+      return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
+    }
+
     // =========================================================================
-    // 1. COMPLETE 17-DAY ITINERARY DATA (2027/06/20 - 2027/07/06, 民國116年)
+    // 1. COMPLETE 17-DAY ITINERARY DATA WITH GOOGLE MAPS LINKS
     // =========================================================================
     const itineraryData = [
       {
         day: 1,
         date: "2027/06/20",
+        shortDate: "06/20",
         rocDate: "116/06/20 (日)",
         phase: "phase1",
         city: "臺灣 → 小松 → 加賀地區",
@@ -911,11 +1180,16 @@
           "抵達後專車/大眾運輸移動至加賀溫泉鄉地區",
           "辦理飯店入住手續與現地環境安全確認，為 17 日職人見習揭開序幕"
         ],
+        locations: [
+          { name: "小松機場 (Komatsu Airport)", url: gmapUrl("小松空港 石川県") },
+          { name: "加賀溫泉鄉地區", url: gmapUrl("加賀温泉駅 石川県加賀市") }
+        ],
         objective: "【適應現地環境與團隊整備】建立團隊跨文化移動默契，調整身心狀態以迎接隔日展開之九谷燒與山中漆器密集研修。"
       },
       {
         day: 2,
         date: "2027/06/21",
+        shortDate: "06/21",
         rocDate: "116/06/21 (一)",
         phase: "phase1",
         city: "能美市",
@@ -926,11 +1200,17 @@
           "能美市九谷燒美術館・五彩館 ＆ 淺藏五十吉紀念館見學",
           "石川縣九谷燒技術中心（含技術研修所）設施見學與專業導覽"
         ],
+        locations: [
+          { name: "能美市九谷燒美術館・五彩館", url: gmapUrl("能美市九谷焼美術館 五彩館") },
+          { name: "淺藏五十吉紀念館", url: gmapUrl("能美市九谷焼美術館 浅蔵五十吉記念館") },
+          { name: "石川縣九谷燒技術中心", url: gmapUrl("石川県九谷焼技術センター") }
+        ],
         objective: "【九谷五彩之色彩表現與青年獨立支援基礎設施】徹底驗證巨匠名品之美學，以及無鉛和繪具之最新科學研究、支援年輕作家自立之公設育成體系。"
       },
       {
         day: 3,
         date: "2027/06/22",
+        shortDate: "06/22",
         rocDate: "116/06/22 (二)",
         phase: "phase1",
         city: "能美市・小松市",
@@ -941,11 +1221,16 @@
           "CERABO KUTANI（九谷陶瓷實驗室）課堂學習瓷土製造基礎，並進行手捏陶體驗研修",
           "宮吉製陶（株式会社宮吉製陶）專業工藝產業導覽與研究"
         ],
+        locations: [
+          { name: "CERABO KUTANI (九谷陶瓷實驗室)", url: gmapUrl("CERABO KUTANI 石川県小松市") },
+          { name: "株式会社宮吉製陶", url: gmapUrl("株式会社宮吉製陶 石川県小松市") }
+        ],
         objective: "【從原料科學到現代窯元實務】深入理解九谷燒花坂陶石製土工藝，並於現代代表性窯元學習窯元營運、製程管理與量產品質實務。"
       },
       {
         day: 4,
         date: "2027/06/23",
+        shortDate: "06/23",
         rocDate: "116/06/23 (三)",
         phase: "phase1",
         city: "能美市",
@@ -956,11 +1241,17 @@
           "石川縣立九谷燒美術館專業導覽",
           "福島武山工房、陶藝晄（陶芸晄）之工房專業工藝指導與交流"
         ],
+        locations: [
+          { name: "石川縣立九谷燒美術館", url: gmapUrl("石川県九谷焼美術館 加賀市") },
+          { name: "福島武山工房", url: gmapUrl("福島武山工房 石川県能美市") },
+          { name: "陶藝晄 (陶芸晄)", url: gmapUrl("陶芸晄 石川県能美市") }
+        ],
         objective: "【赤繪細描技法與作家實踐】深入頂尖職人工坊，近距離觀察並體驗極致細膩的「赤繪細描」等九谷燒代表技法，串聯歷史起源與現代作家創作實踐。"
       },
       {
         day: 5,
         date: "2027/06/24",
+        shortDate: "06/24",
         rocDate: "116/06/24 (四)",
         phase: "phase1",
         city: "加賀市・小松市",
@@ -971,11 +1262,16 @@
           "上午：九谷燒窯跡歷史背景說明，參觀現存最古老的九谷燒登窯",
           "下午：錦山窯（株式会社錦山窯）展示空間「嘸旦-MUTAN-」專業導覽與交流"
         ],
+        locations: [
+          { name: "九谷燒窯跡展示館（現存最古老登窯）", url: gmapUrl("九谷焼窯跡展示館 石川県加賀市") },
+          { name: "錦山窯 展示空間「嘸旦-MUTAN-」", url: gmapUrl("株式会社錦山窯 石川県小松市") }
+        ],
         objective: "【再興九谷之磁器窯構造與極限金彩意匠之品牌經營】上午參觀現存最古老之九谷燒登窯；下午於名門錦山窯「嘸旦」學習傳承 110 餘年之金彩技術，以及昇華為現代藝術・設計之頂級空間美學（工藝行銷）。"
       },
       {
         day: 6,
         date: "2027/06/25",
+        shortDate: "06/25",
         rocDate: "116/06/25 (五)",
         phase: "phase1",
         city: "加賀市",
@@ -986,11 +1282,15 @@
           "終日駐留「石川縣立山中漆器產業技術中心」進行專業研修",
           "接受山中漆器轆轤車削等實作指導與系統驗證"
         ],
+        locations: [
+          { name: "石川縣立山中漆器產業技術中心", url: gmapUrl("石川県立山中漆器産業技術センター") }
+        ],
         objective: "【轆轤車削與蒔繪技術之系統驗證】終日駐留公設之職人育成機構，徹底調查山中漆器引以為傲之「轆轤車削（ろくろ挽き）」與「蒔繪（蒔絵)」之指導體系與手冊化機制，並接受轆轤車削等之實作指導與驗證。"
       },
       {
         day: 7,
         date: "2027/06/26",
+        shortDate: "06/26",
         rocDate: "116/06/26 (六)",
         phase: "phase2",
         city: "加賀 → 金澤市",
@@ -1002,11 +1302,15 @@
           "金澤飯店辦理入住",
           "第一階段田野資料蒐集與學習報告整理"
         ],
+        locations: [
+          { name: "JR 金澤站・金澤市中心", url: gmapUrl("金沢駅 石川県金沢市") }
+        ],
         objective: "【研修據點轉換與知識沉澱】完成加賀南部產地見習後轉進金澤城下町核心，系統化整理前六日拍攝影像與筆記。"
       },
       {
         day: 8,
         date: "2027/06/27",
+        shortDate: "06/27",
         rocDate: "116/06/27 (日)",
         phase: "phase2",
         city: "金澤市",
@@ -1017,11 +1321,16 @@
           "金澤市內工藝街區、美術館或選品店自主田野調查與身心休息調整",
           "第一週學習內容整理，包含個人報告及紀錄片影片初稿撰擬"
         ],
+        locations: [
+          { name: "金澤21世紀美術館（自主調查推薦）", url: gmapUrl("金沢21世紀美術館") },
+          { name: "長町武家屋敷跡・香林坊區域", url: gmapUrl("長町武家屋敷跡 金沢") }
+        ],
         objective: "【自主視角探索與階段性產出】培養青年獨立田野觀察力，並確保第一週學習脈絡轉化為具體文字與影像初稿。"
       },
       {
         day: 9,
         date: "2027/06/28",
+        shortDate: "06/28",
         rocDate: "116/06/28 (一)",
         phase: "phase2",
         city: "金澤市",
@@ -1032,11 +1341,16 @@
           "於石川縣立傳統工藝產業館（いしかわ生活工芸ミュージアム）進行特別講座與專業導覽",
           "專業導覽金澤・Craft 廣坂（クラフト広坂）"
         ],
+        locations: [
+          { name: "石川縣立傳統工藝產業館", url: gmapUrl("いしかわ生活工芸ミュージアム") },
+          { name: "金澤・Craft 廣坂 (クラフト広坂)", url: gmapUrl("金沢・クラフト広坂") }
+        ],
         objective: "【傳統工藝 36 業種之色彩體系與現代工藝市場調查】綜合學習石川・金澤多樣傳統工藝之基礎知識，並透過 Craft 廣坂實地調查當代工藝品的定價、陳列與市場流通機制。"
       },
       {
         day: 10,
         date: "2027/06/29",
+        shortDate: "06/29",
         rocDate: "116/06/29 (二)",
         phase: "phase2",
         city: "金澤市",
@@ -1047,11 +1361,16 @@
           "金澤美術工藝大學（工藝科）技術交流",
           "金澤卯辰山工藝工房專業導覽與工藝產業研究"
         ],
+        locations: [
+          { name: "金澤美術工藝大學", url: gmapUrl("金沢美術工芸大学") },
+          { name: "金澤卯辰山工藝工房", url: gmapUrl("金沢卯辰山工芸工房") }
+        ],
         objective: "【高等教育中技術之語言化與公設孵化器】驗證高度工藝教育制度與支援年輕作家獨立之基礎設施。由館方導覽，聚焦工藝史脈絡、材料應用、品牌轉譯及地方創生模式，並作為成果報告比較分析素材。"
       },
       {
         day: 11,
         date: "2027/06/30",
+        shortDate: "06/30",
         rocDate: "116/06/30 (三)",
         phase: "phase2",
         city: "金澤市",
@@ -1062,11 +1381,15 @@
           "株式會社箔一（Hakuichi）總店專業導覽",
           "箔一工廠研習：金箔製造工序、品質管理與商品化應用"
         ],
+        locations: [
+          { name: "株式會社箔一 本店（箔巧館）", url: gmapUrl("箔一本店 箔巧館 金沢") }
+        ],
         objective: "【金箔製造科技與品質管理】至金箔龍頭企業，學習 1 萬分之 1 毫米的金箔製造工藝流程，以及現代化的品質管理系統、美妝與生活工藝商品化進程。"
       },
       {
         day: 12,
         date: "2027/07/01",
+        shortDate: "07/01",
         rocDate: "116/07/01 (四)",
         phase: "phase2",
         city: "金澤市（東山）",
@@ -1077,11 +1400,16 @@
           "東山・東茶屋街區域（工藝 × 觀光街區營造）實地考察",
           "金澤市立安江金箔工藝館訪問"
         ],
+        locations: [
+          { name: "東茶屋街 (ひがし茶屋街)", url: gmapUrl("ひがし茶屋街 金沢") },
+          { name: "金澤市立安江金箔工藝館", url: gmapUrl("金沢市立安江金箔工芸館") }
+        ],
         objective: "【傳統工藝昇華為觀光經濟之品牌設計】以東茶屋街為模型，學習傳統工藝如何與歷史建築保存結合，被設計為具國際魅力之商業・觀光內容。"
       },
       {
         day: 13,
         date: "2027/07/02",
+        shortDate: "07/02",
         rocDate: "116/07/02 (五)",
         phase: "phase2",
         city: "金澤市",
@@ -1092,11 +1420,15 @@
           "宗桂會館（公益財團法人宗桂会）加賀象嵌專門美術館專業導覽",
           "加賀象嵌作家工坊交流與技法解說"
         ],
+        locations: [
+          { name: "宗桂會館（公益財團法人宗桂会）", url: gmapUrl("公益財団法人宗桂会 金沢") }
+        ],
         objective: "【加賀象嵌之金屬鑲嵌技法與社群傳承】調查金澤舉世聞名之金屬加飾技術「加賀象嵌」之精密鑲嵌技法，以及公益財團法人與職人間的師徒社群傳承系統。"
       },
       {
         day: 14,
         date: "2027/07/03",
+        shortDate: "07/03",
         rocDate: "116/07/03 (六)",
         phase: "phase3",
         city: "金澤市",
@@ -1107,11 +1439,15 @@
           "為 D16 成果發表會整理個人田野研究資料與比較分析架構",
           "或於金澤市內進行補充性自主調查與素材補拍"
         ],
+        locations: [
+          { name: "近江町市場・金澤市區", url: gmapUrl("近江町市場 金沢") }
+        ],
         objective: "【研究成果收斂】將兩週來跨足陶、漆、箔、金工與孵化器的觀察，收斂為具個人設計或產業觀點的發表論述。"
       },
       {
         day: 15,
         date: "2027/07/04",
+        shortDate: "07/04",
         rocDate: "116/07/04 (日)",
         phase: "phase3",
         city: "金澤市",
@@ -1122,11 +1458,15 @@
           "彙整翌日發表會之簡報資料與視覺呈現",
           "一對一或分組業師面談指導，提出完整學習報告及紀錄片初稿"
         ],
+        locations: [
+          { name: "金澤市研修會議場地", url: gmapUrl("金沢市 石川県") }
+        ],
         objective: "【業師指導與發表優化】透過隨團業師專業回饋，精煉簡報邏輯與日/英語交流表達，確保能與日本青年職人深度對話。"
       },
       {
         day: 16,
         date: "2027/07/05",
+        shortDate: "07/05",
         rocDate: "116/07/05 (一)",
         phase: "phase3",
         city: "金澤市",
@@ -1137,11 +1477,15 @@
           "與「石川縣傳統青年會議」進行座談會與現實課題對話",
           "17 日海外見習成果發表會"
         ],
+        locations: [
+          { name: "石川縣金澤市發表會場", url: gmapUrl("金沢市 石川県") }
+        ],
         objective: "【臺日青年職人之真實課題對話與資料總括・發表】以 15 日研修所累積之資料為基礎發表成果，並與石川在地青年職人就傳承困境、品牌創新等真實課題進行跨國討論。"
       },
       {
         day: 17,
         date: "2027/07/06",
+        shortDate: "07/06",
         rocDate: "116/07/06 (二)",
         phase: "phase3",
         city: "金澤市 → 小松 → 臺灣",
@@ -1152,12 +1496,15 @@
           "整理行囊自金澤市內出發前往小松機場",
           "搭機返回臺灣，圓滿完成 17 日《金澤職人夢》海外見習"
         ],
+        locations: [
+          { name: "小松機場 (Komatsu Airport)", url: gmapUrl("小松空港 石川県") }
+        ],
         objective: "【攜回職人精神與未來行動】將石川縣見習所獲之工藝研究與產業洞察帶回臺灣，持續推進個人創作、研究或地方創生行動。"
       }
     ];
 
     // =========================================================================
-    // 2. HOST INSTITUTIONS DIRECTORY DATA (7 Core Institutions from PDF p.1-2)
+    // 2. HOST INSTITUTIONS DIRECTORY DATA WITH GOOGLE MAPS LINKS
     // =========================================================================
     const institutionsData = [
       {
@@ -1168,7 +1515,8 @@
         badgeColor: "bg-goldLeaf/25 text-indigoKaga",
         days: "D11 (6/30)",
         desc: "金澤金箔代表性龍頭企業，預定辦理 1 萬分之 1 毫米金箔製作工序、工廠研修、品質管理系統、商品化應用及品牌經營等研習內容。",
-        url: "https://www.hakuichi.co.jp/"
+        url: "https://www.hakuichi.co.jp/",
+        mapUrl: gmapUrl("箔一本店 箔巧館 石川県金沢市森戸2-1-1")
       },
       {
         name: "福島武山工房",
@@ -1178,7 +1526,8 @@
         badgeColor: "bg-crimsonKaga/10 text-crimsonKaga",
         days: "D4 (6/23)",
         desc: "九谷燒「赤繪細描」代表工房之一，由名匠領軍，預定辦理赤繪細描技法近距離觀摩、專業導覽及工房創作交流。",
-        url: "https://www.instagram.com/fukushima_buzan_kutani/"
+        url: "https://www.instagram.com/fukushima_buzan_kutani/",
+        mapUrl: gmapUrl("福島武山工房 石川県能美市佐野町")
       },
       {
         name: "陶藝晄",
@@ -1188,7 +1537,8 @@
         badgeColor: "bg-crimsonKaga/10 text-crimsonKaga",
         days: "D4 (6/23)",
         desc: "九谷燒代表性作家工房，預定辦理九谷燒繪付技法示範、當代陶藝作家面對面交流與工房實務研修。",
-        url: "https://kutani-midori.jimdofree.com/"
+        url: "https://kutani-midori.jimdofree.com/",
+        mapUrl: gmapUrl("陶芸晄 石川県能美市")
       },
       {
         name: "宮吉製陶",
@@ -1198,7 +1548,8 @@
         badgeColor: "bg-crimsonKaga/10 text-crimsonKaga",
         days: "D3 (6/22)",
         desc: "九谷燒重要現代窯元，預定辦理窯元現代化營運模式、成型與燒成製程導覽及產業實務研修。",
-        url: "https://miyayoshiseitou.jp/"
+        url: "https://miyayoshiseitou.jp/",
+        mapUrl: gmapUrl("株式会社宮吉製陶 石川県小松市若杉町")
       },
       {
         name: "宗桂會館",
@@ -1208,7 +1559,8 @@
         badgeColor: "bg-forestKaga/10 text-forestKaga",
         days: "D13 (7/02)",
         desc: "加賀象嵌專門美術館與文化推廣據點，預定辦理專業館藏導覽、金屬鑲嵌技法說明與加賀象嵌職人社群交流。",
-        url: "https://www.soukeikai.or.jp/"
+        url: "https://www.soukeikai.or.jp/",
+        mapUrl: gmapUrl("公益財団法人宗桂会 石川県金沢市彦三町")
       },
       {
         name: "石川縣立山中漆器產業技術中心",
@@ -1218,7 +1570,8 @@
         badgeColor: "bg-ochreKaga/15 text-ochreKaga",
         days: "D6 (6/25)",
         desc: "日本重要之山中漆器公設研修設施，預定辦理轆轤車削（ろくろ挽き）、蒔繪（蒔絵）指導體系驗證及相關漆藝實作研修。",
-        url: "https://yamanaka696.org/"
+        url: "https://yamanaka696.org/",
+        mapUrl: gmapUrl("石川県立山中漆器産業技術センター 石川県加賀市山中温泉塚谷町")
       },
       {
         name: "錦山窯（嘸旦 -MUTAN-）",
@@ -1228,30 +1581,28 @@
         badgeColor: "bg-crimsonKaga/10 text-crimsonKaga",
         days: "D5 (6/24)",
         desc: "傳承逾 110 年之九谷燒名門窯元，設有頂級展示空間「嘸旦-MUTAN-」，預定辦理展示空間導覽、品牌經營觀察與金彩技法交流。",
-        url: "https://kinzangama.com/"
+        url: "https://kinzangama.com/",
+        mapUrl: gmapUrl("株式会社錦山窯 石川県小松市高堂町")
       }
     ];
 
     // =========================================================================
-    // 3. STATE MANAGEMENT (Bookmarks & Personal Notes in localStorage)
+    // 3. STATE MANAGEMENT (Date Filter, Bookmarks, Packing List, Expenses)
     // =========================================================================
     let currentPhase = "all";
-    let expandedDays = new Set([2, 4, 6, 11, 16]); // Default expanded highlights
-    let savedNotes = {}; // { [dayNumber]: { bookmarked: boolean, note: string } }
+    let selectedDay = "all"; // 'all' or integer 1..17
+    let expandedDays = new Set([2, 4, 6, 11, 16]);
+    let savedNotes = {};
 
     try {
       const stored = localStorage.getItem("kanazawa_m28_notes");
       if (stored) savedNotes = JSON.parse(stored);
-    } catch (e) {
-      console.warn("localStorage unavailable", e);
-    }
+    } catch (e) {}
 
     function persistNotes() {
       try {
         localStorage.setItem("kanazawa_m28_notes", JSON.stringify(savedNotes));
-      } catch (e) {
-        console.warn("Failed to save to localStorage", e);
-      }
+      } catch (e) {}
       updateSavedBadge();
     }
 
@@ -1272,17 +1623,74 @@
     function saveDayNote(day, value) {
       if (!savedNotes[day]) savedNotes[day] = { bookmarked: false, note: "" };
       savedNotes[day].note = value;
-      if (value.trim().length > 0) {
-        savedNotes[day].bookmarked = true;
-      }
+      if (value.trim().length > 0) savedNotes[day].bookmarked = true;
       persistNotes();
     }
 
     // =========================================================================
-    // 4. RENDER ITINERARY TIMELINE
+    // 4. DATE SELECTOR MENU & ITINERARY RENDERING
     // =========================================================================
-    function setPhaseFilter(phase) {
-      currentPhase = phase;
+    function initDateMenu() {
+      const select = document.getElementById("dateJumpSelect");
+      itineraryData.forEach(item => {
+        const opt = document.createElement("option");
+        opt.value = String(item.day);
+        opt.textContent = `Day ${String(item.day).padStart(2, '0')}｜${item.date}（${item.craftTag}）`;
+        select.appendChild(opt);
+      });
+      renderDateStrip();
+    }
+
+    function renderDateStrip() {
+      const strip = document.getElementById("dateStripContainer");
+      const showAllBtn = document.getElementById("showAllDaysBtn");
+
+      if (selectedDay === "all") {
+        showAllBtn.className = "text-xs font-medium px-2.5 py-1 rounded-lg bg-indigoKaga text-white transition-colors cursor-pointer";
+      } else {
+        showAllBtn.className = "text-xs font-medium px-2.5 py-1 rounded-lg bg-washiDark text-indigoKaga hover:bg-goldLeaf/30 border border-stone-300 transition-colors cursor-pointer";
+      }
+
+      strip.innerHTML = itineraryData.map(item => {
+        const isSelected = Number(selectedDay) === item.day;
+        return `
+          <button
+            onclick="selectSpecificDay(${item.day})"
+            class="shrink-0 px-3 py-2 rounded-xl border text-left transition-all cursor-pointer ${
+              isSelected
+                ? 'bg-indigoKaga text-white border-goldLeaf shadow-sm scale-[1.02]'
+                : 'bg-washi hover:bg-washiDark text-indigoKaga border-stone-200'
+            }"
+          >
+            <div class="flex items-center justify-between gap-2">
+              <span class="font-mono text-[11px] font-bold ${isSelected ? 'text-goldLight' : 'text-crimsonKaga'}">D${item.day}</span>
+              <span class="font-mono text-xs font-semibold">${item.shortDate}</span>
+            </div>
+            <div class="text-[10px] truncate max-w-[76px] mt-0.5 ${isSelected ? 'text-stone-200' : 'text-inkMuted'}">
+              ${item.craftTag}
+            </div>
+          </button>
+        `;
+      }).join('');
+    }
+
+    function selectSpecificDay(dayVal) {
+      if (dayVal === "all" || Number(selectedDay) === Number(dayVal)) {
+        selectedDay = "all";
+        document.getElementById("dateJumpSelect").value = "all";
+      } else {
+        selectedDay = Number(dayVal);
+        document.getElementById("dateJumpSelect").value = String(selectedDay);
+        currentPhase = "all";
+        document.getElementById("itinerarySearch").value = "";
+        expandedDays.add(selectedDay);
+        updatePhaseButtonsUI("all");
+      }
+      renderDateStrip();
+      renderItinerary();
+    }
+
+    function updatePhaseButtonsUI(phase) {
       document.querySelectorAll(".phase-btn").forEach(btn => {
         if (btn.dataset.phase === phase) {
           btn.classList.remove("bg-washiDark", "text-indigoKaga");
@@ -1292,13 +1700,25 @@
           btn.classList.add("bg-washiDark", "text-indigoKaga");
         }
       });
+    }
+
+    function setPhaseFilter(phase) {
+      selectedDay = "all";
+      document.getElementById("dateJumpSelect").value = "all";
+      renderDateStrip();
+      currentPhase = phase;
+      updatePhaseButtonsUI(phase);
       renderItinerary();
     }
 
     function filterByKeyword(keyword) {
+      selectedDay = "all";
+      document.getElementById("dateJumpSelect").value = "all";
+      renderDateStrip();
       const input = document.getElementById("itinerarySearch");
       input.value = keyword;
-      setPhaseFilter("all");
+      currentPhase = "all";
+      updatePhaseButtonsUI("all");
       renderItinerary();
     }
 
@@ -1308,8 +1728,13 @@
     }
 
     function resetFilters() {
+      selectedDay = "all";
+      document.getElementById("dateJumpSelect").value = "all";
       document.getElementById("itinerarySearch").value = "";
-      setPhaseFilter("all");
+      currentPhase = "all";
+      updatePhaseButtonsUI("all");
+      renderDateStrip();
+      renderItinerary();
     }
 
     function toggleDayExpand(day) {
@@ -1343,6 +1768,9 @@
       }
 
       const filtered = itineraryData.filter(item => {
+        if (selectedDay !== "all") {
+          return item.day === Number(selectedDay);
+        }
         const matchPhase = currentPhase === "all" || item.phase === currentPhase;
         const searchableText = `${item.day} ${item.date} ${item.rocDate} ${item.city} ${item.craftTag} ${item.theme} ${item.activities.join(" ")} ${item.objective}`.toLowerCase();
         const matchQuery = !query || searchableText.includes(query);
@@ -1363,7 +1791,7 @@
         const hasNote = dayState.note && dayState.note.trim().length > 0;
 
         return `
-          <div class="bg-white rounded-2xl border ${dayState.bookmarked ? 'border-goldLeaf shadow-gold/20' : 'border-stone-200/90'} shadow-xs transition-all overflow-hidden">
+          <div id="day-card-${item.day}" class="bg-white rounded-2xl border ${dayState.bookmarked || Number(selectedDay) === item.day ? 'border-goldLeaf shadow-gold/20' : 'border-stone-200/90'} shadow-xs transition-all overflow-hidden">
             <!-- Card Header (Clickable Accordion Trigger) -->
             <div onclick="toggleDayExpand(${item.day})" class="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 cursor-pointer hover:bg-washi/60 transition-colors">
               <div class="flex items-start sm:items-center gap-3.5">
@@ -1407,25 +1835,49 @@
             <!-- Accordion Expanded Body -->
             <div class="${isExpanded ? 'block' : 'hidden'} px-4 pb-5 sm:px-6 sm:pb-6 pt-2 border-t border-stone-100 bg-washi/40">
               <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 mt-2">
-                <!-- Activities List -->
-                <div class="lg:col-span-6 space-y-2">
-                  <div class="text-xs font-mono font-bold uppercase tracking-wider text-indigoKaga flex items-center gap-1.5">
-                    <i data-lucide="list-checks" class="w-4 h-4 text-crimsonKaga"></i>
-                    當日見習與參訪內容
+                <!-- Activities List + Google Maps Links -->
+                <div class="lg:col-span-6 space-y-3">
+                  <div>
+                    <div class="text-xs font-mono font-bold uppercase tracking-wider text-indigoKaga flex items-center gap-1.5 mb-1.5">
+                      <i data-lucide="list-checks" class="w-4 h-4 text-crimsonKaga"></i>
+                      當日見習與參訪內容
+                    </div>
+                    <ul class="space-y-1.5 text-sm text-ink pl-1">
+                      ${item.activities.map(act => `
+                        <li class="flex items-start gap-2">
+                          <span class="w-1.5 h-1.5 rounded-full bg-goldLeaf mt-2 shrink-0"></span>
+                          <span>${act}</span>
+                        </li>
+                      `).join('')}
+                    </ul>
                   </div>
-                  <ul class="space-y-1.5 text-sm text-ink pl-1">
-                    ${item.activities.map(act => `
-                      <li class="flex items-start gap-2">
-                        <span class="w-1.5 h-1.5 rounded-full bg-goldLeaf mt-2 shrink-0"></span>
-                        <span>${act}</span>
-                      </li>
-                    `).join('')}
-                  </ul>
+
+                  <!-- Google Maps Location Pills -->
+                  <div class="pt-2">
+                    <div class="text-[11px] font-mono font-semibold text-inkMuted mb-1.5 flex items-center gap-1">
+                      <i data-lucide="navigation" class="w-3.5 h-3.5 text-forestKaga"></i>
+                      當日景點 Google Maps 導航：
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                      ${item.locations.map(loc => `
+                        <a
+                          href="${loc.url}"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white hover:bg-forestKaga hover:text-white text-indigoKaga border border-stone-300 hover:border-forestKaga text-xs font-medium shadow-2xs transition-colors"
+                        >
+                          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-crimsonKaga shrink-0"></i>
+                          <span>${loc.name}</span>
+                          <i data-lucide="external-link" class="w-3 h-3 opacity-70"></i>
+                        </a>
+                      `).join('')}
+                    </div>
+                  </div>
                 </div>
 
                 <!-- Learning Objective Box -->
                 <div class="lg:col-span-6">
-                  <div class="p-4 rounded-xl bg-white border border-goldLeaf/40 shadow-2xs">
+                  <div class="p-4 rounded-xl bg-white border border-goldLeaf/40 shadow-2xs h-full">
                     <div class="text-xs font-mono font-bold uppercase tracking-wider text-crimsonKaga flex items-center gap-1.5 mb-1.5">
                       <i data-lucide="target" class="w-4 h-4"></i>
                       學習目的與產業研究重點
@@ -1460,7 +1912,7 @@
     }
 
     // =========================================================================
-    // 5. RENDER HOST INSTITUTIONS DIRECTORY
+    // 5. RENDER HOST INSTITUTIONS DIRECTORY (WITH GOOGLE MAPS + OFFICIAL SITE)
     // =========================================================================
     function filterInstitutions(city) {
       document.querySelectorAll(".city-btn").forEach(btn => {
@@ -1489,10 +1941,13 @@
               ${inst.desc}
             </p>
           </div>
-          <div class="pt-4 border-t border-stone-100 flex items-center justify-between">
-            <span class="text-xs text-inkMuted">官方參考網站</span>
-            <a href="${inst.url}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-medium text-indigoKaga hover:text-crimsonKaga transition-colors">
-              前往機構網頁 <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+          <div class="pt-4 border-t border-stone-100 flex flex-wrap items-center justify-between gap-2">
+            <a href="${inst.mapUrl}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-forestKaga/10 hover:bg-forestKaga text-forestKaga hover:text-white text-xs font-medium transition-colors">
+              <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>
+              Google Maps
+            </a>
+            <a href="${inst.url}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-washi hover:bg-indigoKaga text-indigoKaga hover:text-white border border-stone-200 text-xs font-medium transition-colors">
+              官方網頁 <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
             </a>
           </div>
         </div>
@@ -1502,151 +1957,337 @@
     }
 
     // =========================================================================
-    // 6. ELIGIBILITY SELF-CHECK LOGIC
+    // 6. INTERACTIVE PRE-DEPARTURE PACKING & PREPARATION CHECKLIST
     // =========================================================================
-    function updateEligibilityStatus() {
-      const mandatoryChecked = document.querySelectorAll(".mandatory-chk:checked").length;
-      const priorityChecked = document.querySelectorAll(".priority-chk:checked").length;
+    const defaultPackingItems = [
+      { id: "p1", cat: "docs", text: "中華民國護照（確認返國日 2027/07/06 起算尚有 6 個月以上效期）", checked: false },
+      { id: "p2", cat: "docs", text: "日本入境簽證 / Visit Japan Web 預先登錄（須於出發日前取得）", checked: false },
+      { id: "p3", cat: "docs", text: "海外旅平險保單（至少 200–300 萬意外險 ＋ 20–50 萬海外醫療險）", checked: false },
+      { id: "p4", cat: "docs", text: "臺灣—小松機場來回電子機票與行程表備份", checked: false },
+      { id: "p5", cat: "docs", text: "完成 2 次行前培訓（出國前 14 日及前 7 日，合計 8 小時）", checked: false },
 
-      document.getElementById("mandatoryScore").textContent = `${mandatoryChecked} / 4 已符合`;
-      document.getElementById("priorityScore").textContent = `${priorityChecked} / 5 項加分`;
+      { id: "p6", cat: "craft", text: "山中漆器實作防護：薄長袖衣物、袖套與個人過敏防護用品", checked: false },
+      { id: "p7", cat: "craft", text: "耐髒且方便活動的工作服 / 圍裙（窯元與九谷燒手捏陶實作）", checked: false },
+      { id: "p8", cat: "craft", text: "好穿脫的包鞋與襪子（進出日本傳統工藝館、茶室與工房常需脫鞋）", checked: false },
+      { id: "p9", cat: "craft", text: "田野筆記本、繪圖本、比例尺與多色筆（記錄器型與五彩配色）", checked: false },
 
-      const resultBox = document.getElementById("readinessResult");
+      { id: "p10", cat: "media", text: "個人紀錄片拍攝器材（手機穩定器/腳架、麥克風、備用記憶卡）", checked: false },
+      { id: "p11", cat: "media", text: "大容量行動電源（需隨身登機，不可託運）與日本雙平腳充電線材", checked: false },
+      { id: "p12", cat: "media", text: "日本 17 日上網 SIM 卡 / eSIM 或漫遊方案", checked: false },
+      { id: "p13", cat: "media", text: "筆電或平板（用於 D7/D8 與 D14/D15 整理報告及剪輯發表簡報）", checked: false },
 
-      if (mandatoryChecked === 4) {
-        resultBox.className = "mt-5 p-4 rounded-xl bg-forestKaga/10 border border-forestKaga/30 flex items-start gap-3";
-        resultBox.innerHTML = `
-          <i data-lucide="check-circle-2" class="w-5 h-5 text-forestKaga shrink-0 mt-0.5"></i>
-          <div class="text-xs sm:text-sm text-forestKaga">
-            <strong>恭喜！你已完全符合 4 項必要申請資格！</strong>
-            <p class="mt-1 text-ink">目前同時具備 <strong>${priorityChecked} 項</strong>優先加分條件。建議立即使用上方「17 日行程表」收藏感興趣的職人工房並撰寫研究筆記，作為申請計畫書的亮點素材！</p>
-          </div>
-        `;
-      } else {
-        const missing = 4 - mandatoryChecked;
-        resultBox.className = "mt-5 p-4 rounded-xl bg-amber-50 border border-amber-200 flex items-start gap-3";
-        resultBox.innerHTML = `
-          <i data-lucide="alert-circle" class="w-5 h-5 text-ochreKaga shrink-0 mt-0.5"></i>
-          <div class="text-xs sm:text-sm text-ink">
-            <strong>尚有 ${missing} 項必要條件未勾選</strong>
-            <p class="mt-1 text-inkMuted">申請本計畫須同時滿足 4 項必要條件（如年齡 18–30 歲、JLPT N4 或 CEFR B1 語言門檻、全程參與 17 日見習與行前培訓）。</p>
-          </div>
-        `;
+      { id: "p14", cat: "life", text: "青年自理零用金 NT$ 5,217 等值日圓現鈔（石川部分老舖僅收現金）", checked: false },
+      { id: "p15", cat: "life", text: "個人常備藥品（腸胃藥、過敏藥、OK繃、防蚊液）", checked: false },
+      { id: "p16", cat: "life", text: "折疊晴雨傘與防曬用品（6–7 月北陸梅雨季與初夏氣候多變）", checked: false },
+      { id: "p17", cat: "life", text: "個人名片 / 作品小卡與臺灣特色小伴手禮（致贈職人與石川青年交流）", checked: false }
+    ];
+
+    const packingCategoriesMeta = {
+      docs: { title: "證件與計畫行政", icon: "file-check-2", color: "text-crimsonKaga", bg: "bg-crimsonKaga/10" },
+      craft: { title: "工房實作與防護裝備", icon: "hammer", color: "text-ochreKaga", bg: "bg-ochreKaga/15" },
+      media: { title: "影音紀錄與田野調查", icon: "video", color: "text-indigoKaga", bg: "bg-indigoKaga/10" },
+      life: { title: "生活衣物與日幣現金", icon: "luggage", color: "text-forestKaga", bg: "bg-forestKaga/10" }
+    };
+
+    let packingItems = [];
+    try {
+      const storedPacking = localStorage.getItem("kanazawa_m28_packing");
+      packingItems = storedPacking ? JSON.parse(storedPacking) : JSON.parse(JSON.stringify(defaultPackingItems));
+    } catch (e) {
+      packingItems = JSON.parse(JSON.stringify(defaultPackingItems));
+    }
+
+    function persistPacking() {
+      try {
+        localStorage.setItem("kanazawa_m28_packing", JSON.stringify(packingItems));
+      } catch (e) {}
+    }
+
+    function togglePackingItem(id) {
+      const item = packingItems.find(i => i.id === id);
+      if (item) {
+        item.checked = !item.checked;
+        persistPacking();
+        renderPackingChecklist();
       }
-      lucide.createIcons();
     }
 
-    // =========================================================================
-    // 7. MODALS, CLIPBOARD & MOBILE MENU
-    // =========================================================================
-    function toggleMobileMenu() {
-      document.getElementById("mobileMenu").classList.toggle("hidden");
-    }
+    function addCustomPackingItem(e) {
+      e.preventDefault();
+      const cat = document.getElementById("newPackingCategory").value;
+      const input = document.getElementById("newPackingInput");
+      const text = input.value.trim();
+      if (!text) return;
 
-    function openNotesModal() {
-      const modal = document.getElementById("notesModal");
-      const body = document.getElementById("notesModalBody");
-
-      const savedEntries = itineraryData.filter(d => {
-        const st = savedNotes[d.day];
-        return st && (st.bookmarked || (st.note && st.note.trim().length > 0));
+      packingItems.push({
+        id: "custom_" + Date.now(),
+        cat,
+        text,
+        checked: false,
+        custom: true
       });
+      input.value = "";
+      persistPacking();
+      renderPackingChecklist();
+      showToast("已新增至行前準備清單");
+    }
 
-      if (savedEntries.length === 0) {
-        body.innerHTML = `
-          <div class="text-center py-10">
-            <i data-lucide="bookmark" class="w-10 h-10 text-stone-300 mx-auto mb-3"></i>
-            <p class="font-serif font-bold text-base text-indigoKaga">尚未收藏任何見習日程</p>
-            <p class="text-xs sm:text-sm text-inkMuted mt-1">請在「17 日完整行程表」中點擊書籤圖示，或輸入您的研究備忘筆記。</p>
-          </div>
-        `;
-      } else {
-        body.innerHTML = savedEntries.map(d => {
-          const st = savedNotes[d.day];
-          return `
-            <div class="p-4 rounded-xl bg-white border border-stone-200 shadow-2xs">
-              <div class="flex items-center justify-between mb-1">
-                <span class="font-mono text-xs font-bold text-crimsonKaga">DAY ${String(d.day).padStart(2, '0')}・${d.date} (${d.city})</span>
-                <button onclick="toggleBookmark(${d.day}); openNotesModal();" class="text-xs text-inkMuted hover:text-crimsonKaga cursor-pointer">移除收藏</button>
+    function deletePackingItem(id) {
+      packingItems = packingItems.filter(i => i.id !== id);
+      persistPacking();
+      renderPackingChecklist();
+    }
+
+    function resetPackingChecklist() {
+      packingItems = JSON.parse(JSON.stringify(defaultPackingItems));
+      persistPacking();
+      renderPackingChecklist();
+      showToast("已重設為預設行前準備清單");
+    }
+
+    function renderPackingChecklist() {
+      const grid = document.getElementById("packingGrid");
+      const total = packingItems.length;
+      const done = packingItems.filter(i => i.checked).length;
+      const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+
+      document.getElementById("packingProgressText").textContent = `${done} / ${total} 項已完成 (${pct}%)`;
+      document.getElementById("packingProgressBar").style.width = `${pct}%`;
+
+      grid.innerHTML = Object.entries(packingCategoriesMeta).map(([catKey, meta]) => {
+        const items = packingItems.filter(i => i.cat === catKey);
+        const catDone = items.filter(i => i.checked).length;
+
+        return `
+          <div class="bg-white rounded-2xl p-5 sm:p-6 border border-stone-200 shadow-xs">
+            <div class="flex items-center justify-between mb-4 pb-3 border-b border-stone-100">
+              <div class="flex items-center gap-2.5">
+                <div class="w-9 h-9 rounded-xl ${meta.bg} ${meta.color} flex items-center justify-center">
+                  <i data-lucide="${meta.icon}" class="w-4 h-4"></i>
+                </div>
+                <h3 class="font-serif font-bold text-lg text-indigoKaga">${meta.title}</h3>
               </div>
-              <h4 class="font-serif font-bold text-base text-indigoKaga mb-1">${d.theme}</h4>
-              <p class="text-xs text-inkMuted mb-2">${d.objective}</p>
-              ${st.note ? `<div class="p-2.5 rounded-lg bg-forestKaga/10 text-xs text-forestKaga font-medium">筆記：${st.note}</div>` : ''}
+              <span class="font-mono text-xs font-semibold px-2.5 py-1 rounded-full bg-washi text-indigoKaga border border-stone-200">
+                ${catDone}/${items.length}
+              </span>
             </div>
-          `;
-        }).join('');
-      }
 
-      modal.classList.remove("hidden");
+            <div class="space-y-2.5">
+              ${items.map(item => `
+                <div class="flex items-start justify-between gap-2 p-2.5 rounded-xl ${item.checked ? 'bg-forestKaga/5' : 'bg-washi/70 hover:bg-washiDark/60'} border border-stone-200/70 transition-colors">
+                  <label class="flex items-start gap-3 cursor-pointer flex-1">
+                    <input
+                      type="checkbox"
+                      ${item.checked ? "checked" : ""}
+                      onchange="togglePackingItem('${item.id}')"
+                      class="mt-1 w-4 h-4 accent-forestKaga rounded cursor-pointer"
+                    />
+                    <span class="text-xs sm:text-sm leading-relaxed ${item.checked ? 'line-through text-inkMuted' : 'text-ink'}">
+                      ${item.text}
+                    </span>
+                  </label>
+                  ${item.custom ? `
+                    <button onclick="deletePackingItem('${item.id}')" title="刪除此項目" class="text-stone-400 hover:text-crimsonKaga p-1 cursor-pointer">
+                      <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
+                    </button>
+                  ` : ''}
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        `;
+      }).join('');
+
       lucide.createIcons();
     }
 
-    function closeNotesModal() {
-      document.getElementById("notesModal").classList.add("hidden");
+    // =========================================================================
+    // 7. INTERACTIVE BUDGET & EXPENSE TRACKER (TWD + JPY)
+    // =========================================================================
+    const defaultExpenses = [
+      { id: "e1", date: "行前準備", category: "機票交通", title: "臺灣—小松機場來回經濟艙機票（預估）", currency: "TWD", amount: 18500 },
+      { id: "e2", date: "行前準備", category: "保險行政", title: "17日海外意外險＋海外突發疾病醫療險", currency: "TWD", amount: 1680 },
+      { id: "e3", date: "D8 06/27", category: "書籍與美術館", title: "金澤21世紀美術館特展門票與工藝圖錄", currency: "JPY", amount: 2800 }
+    ];
+
+    let jpyRate = 0.215;
+    let expenseEntries = [];
+
+    try {
+      const storedRate = localStorage.getItem("kanazawa_m28_jpy_rate");
+      if (storedRate) jpyRate = parseFloat(storedRate) || 0.215;
+      const storedExp = localStorage.getItem("kanazawa_m28_expenses");
+      expenseEntries = storedExp ? JSON.parse(storedExp) : JSON.parse(JSON.stringify(defaultExpenses));
+    } catch (e) {
+      expenseEntries = JSON.parse(JSON.stringify(defaultExpenses));
     }
 
-    function copyNotesToClipboard() {
-      const savedEntries = itineraryData.filter(d => {
-        const st = savedNotes[d.day];
-        return st && (st.bookmarked || (st.note && st.note.trim().length > 0));
+    function persistExpenses() {
+      try {
+        localStorage.setItem("kanazawa_m28_expenses", JSON.stringify(expenseEntries));
+        localStorage.setItem("kanazawa_m28_jpy_rate", String(jpyRate));
+      } catch (e) {}
+    }
+
+    function updateExchangeRate(val) {
+      const parsed = parseFloat(val);
+      if (parsed > 0) {
+        jpyRate = parsed;
+        persistExpenses();
+        renderExpenses();
+        showToast(`已更新日圓匯率：1 JPY = ${jpyRate} TWD`);
+      }
+    }
+
+    function addExpenseEntry(e) {
+      e.preventDefault();
+      const date = document.getElementById("expDate").value;
+      const category = document.getElementById("expCategory").value;
+      const title = document.getElementById("expTitle").value.trim();
+      const currency = document.getElementById("expCurrency").value;
+      const amount = parseFloat(document.getElementById("expAmount").value);
+
+      if (!title || isNaN(amount) || amount <= 0) return;
+
+      expenseEntries.unshift({
+        id: "exp_" + Date.now(),
+        date,
+        category,
+        title,
+        currency,
+        amount
       });
 
-      if (savedEntries.length === 0) {
-        showToast("目前沒有可複製的收藏筆記");
+      document.getElementById("expTitle").value = "";
+      document.getElementById("expAmount").value = "";
+      persistExpenses();
+      renderExpenses();
+      showToast("已新增一筆花費紀錄");
+    }
+
+    function deleteExpenseEntry(id) {
+      expenseEntries = expenseEntries.filter(item => item.id !== id);
+      persistExpenses();
+      renderExpenses();
+      showToast("已刪除該筆花費紀錄");
+    }
+
+    function resetDefaultExpenses() {
+      expenseEntries = JSON.parse(JSON.stringify(defaultExpenses));
+      persistExpenses();
+      renderExpenses();
+      showToast("已恢復範例花費紀錄");
+    }
+
+    function exportExpensesCsv() {
+      if (expenseEntries.length === 0) {
+        showToast("目前沒有可匯出的花費紀錄");
+        return;
+      }
+      const headers = ["日期", "類別", "項目說明", "幣別", "原始金額", "折合臺幣(TWD)"];
+      const rows = expenseEntries.map(item => {
+        const twd = item.currency === "TWD" ? Math.round(item.amount) : Math.round(item.amount * jpyRate);
+        return [item.date, item.category, `"${item.title.replace(/"/g, '""')}"`, item.currency, item.amount, twd].join(",");
+      });
+      const csvContent = "\uFEFF" + [headers.join(","), ...rows].join("\n");
+      const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "M-2-8_金澤職人夢_個人花費紀錄.csv";
+      a.click();
+      URL.revokeObjectURL(url);
+      showToast("已匯出 CSV 報表！");
+    }
+
+    function renderExpenses() {
+      document.getElementById("jpyRateInput").value = jpyRate;
+      const tbody = document.getElementById("expenseTableBody");
+
+      let totalTwd = 0;
+      let totalJpy = 0;
+      let pocketSpentTwd = 0;
+
+      expenseEntries.forEach(item => {
+        const twdVal = item.currency === "TWD" ? Math.round(item.amount) : Math.round(item.amount * jpyRate);
+        totalTwd += twdVal;
+        if (item.currency === "JPY") totalJpy += item.amount;
+        if (item.category !== "機票交通" && item.category !== "保險行政") {
+          pocketSpentTwd += twdVal;
+        }
+      });
+
+      const remainingTotal = 27017 - totalTwd;
+      const remainingPocket = 5217 - pocketSpentTwd;
+
+      document.getElementById("expenseTotalTwd").textContent = `NT$ ${totalTwd.toLocaleString()}`;
+      document.getElementById("expenseTotalJpy").textContent = `其中日圓消費：¥${totalJpy.toLocaleString()}`;
+
+      const remEl = document.getElementById("expenseRemainingTwd");
+      const remHint = document.getElementById("expenseRemainingHint");
+      remEl.textContent = `NT$ ${remainingTotal.toLocaleString()}`;
+      if (remainingTotal >= 0) {
+        remEl.className = "font-mono font-bold text-xl text-forestKaga mt-1";
+        remHint.className = "text-[11px] text-forestKaga";
+        remHint.textContent = "自理總額度尚有結餘";
+      } else {
+        remEl.className = "font-mono font-bold text-xl text-crimsonKaga mt-1";
+        remHint.className = "text-[11px] text-crimsonKaga font-medium";
+        remHint.textContent = `超出自理獎勵金 NT$ ${Math.abs(remainingTotal).toLocaleString()}`;
+      }
+
+      const pocketEl = document.getElementById("pocketRemainingTwd");
+      pocketEl.textContent = `NT$ ${remainingPocket.toLocaleString()}`;
+      pocketEl.className = `font-mono font-bold text-xl mt-1 ${remainingPocket >= 0 ? 'text-ochreKaga' : 'text-crimsonKaga'}`;
+
+      if (expenseEntries.length === 0) {
+        tbody.innerHTML = `
+          <tr>
+            <td colspan="6" class="py-8 text-center text-inkMuted">尚無任何花費紀錄，請使用上方表單新增。</td>
+          </tr>
+        `;
         return;
       }
 
-      const text = [
-        "【M-2-8 金澤職人夢｜我的 17 日見習重點筆記】",
-        "見習期間：2027/06/20 – 2027/07/06（日本石川縣）",
-        "----------------------------------------",
-        ...savedEntries.map(d => {
-          const st = savedNotes[d.day];
-          return `Day ${d.day} (${d.date})｜${d.theme}\n地點：${d.city}\n學習目的：${d.objective}${st.note ? `\n個人筆記：${st.note}` : ''}\n`;
-        })
-      ].join("\n");
+      tbody.innerHTML = expenseEntries.map(item => {
+        const twdVal = item.currency === "TWD" ? Math.round(item.amount) : Math.round(item.amount * jpyRate);
+        const origDisplay = item.currency === "TWD"
+          ? `NT$ ${Number(item.amount).toLocaleString()}`
+          : `¥ ${Number(item.amount).toLocaleString()}`;
 
-      const textarea = document.createElement("textarea");
-      textarea.value = text;
-      document.body.appendChild(textarea);
-      textarea.select();
-      try {
-        document.execCommand("copy");
-        showToast("已將全部見習筆記複製到剪貼簿！");
-      } catch (err) {
-        showToast("複製失敗，請手動選取文字複製");
-      }
-      document.body.removeChild(textarea);
-    }
+        return `
+          <tr class="hover:bg-washi/60 transition-colors">
+            <td class="py-3 px-4 font-mono text-xs text-indigoKaga whitespace-nowrap">${item.date}</td>
+            <td class="py-3 px-4 whitespace-nowrap">
+              <span class="px-2 py-0.5 rounded-md text-xs font-medium bg-indigoKaga/10 text-indigoKaga">${item.category}</span>
+            </td>
+            <td class="py-3 px-4 text-ink font-medium">${item.title}</td>
+            <td class="py-3 px-4 text-right font-mono text-xs text-inkMuted whitespace-nowrap">${origDisplay}</td>
+            <td class="py-3 px-4 text-right font-mono font-bold text-indigoKaga whitespace-nowrap">NT$ ${twdVal.toLocaleString()}</td>
+            <td class="py-3 px-4 text-center">
+              <button onclick="deleteExpenseEntry('${item.id}')" title="刪除" class="p-1.5 rounded-lg text-stone-400 hover:text-crimsonKaga hover:bg-crimsonKaga/10 transition-colors cursor-pointer">
+                <i data-lucide="trash-2" class="w-4 h-4"></i>
+              </button>
+            </td>
+          </tr>
+        `;
+      }).join('');
 
-    function openGithubModal() {
-      document.getElementById("githubModal").classList.remove("hidden");
       lucide.createIcons();
     }
 
-    function closeGithubModal() {
-      document.getElementById("githubModal").classList.add("hidden");
-    }
-
-    function showToast(msg) {
-      const toast = document.getElementById("toast");
-      document.getElementById("toastMsg").textContent = msg;
-      toast.classList.remove("translate-y-20", "opacity-0");
-      setTimeout(() => {
-        toast.classList.add("translate-y-20", "opacity-0");
-      }, 2600);
-    }
-
-    // Close modals when clicking backdrop
-    window.addEventListener("click", (e) => {
-      if (e.target.id === "notesModal") closeNotesModal();
-      if (e.target.id === "githubModal") closeGithubModal();
-    });
-
+    // =========================================================================
+    // 8. ELIGIBILITY SELF-CHECK LOGIC
+    // =========================================================================
+    function updateEligibilityStatus() {
+// ... existing code ... -->
     // Initialize Page
     document.addEventListener("DOMContentLoaded", () => {
+      initDateMenu();
       renderItinerary();
       filterInstitutions("all");
+      renderPackingChecklist();
+      renderExpenses();
       updateSavedBadge();
       lucide.createIcons();
     });
